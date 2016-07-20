@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.havas.com/C/SEF/BC" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://www.havas.com/C/SEF/BC" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="BSE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IE" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="M" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OO" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BSE" nillable="true" type="tns:BSE" />
+</xs:schema>

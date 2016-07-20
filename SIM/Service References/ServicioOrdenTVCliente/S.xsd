@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.havas.com/MMS/C/S" elementFormDefault="qualified" targetNamespace="http://www.havas.com/MMS/C/S" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import namespace="http://www.havas.com/C/SEF/BC" />
+  <xs:complexType name="U">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://www.havas.com/C/SEF/BC" base="q1:BSE">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="A" type="xs:int" />
+          <xs:element minOccurs="0" name="A1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="A2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AN" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CA" type="xs:int" />
+          <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CC" nillable="true" type="q2:ArrayOfint" />
+          <xs:element minOccurs="0" name="DCA" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DPA" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="E" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="F" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="L" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="N" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ND" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="PA" type="xs:int" />
+          <xs:element minOccurs="0" name="U" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="U" nillable="true" type="tns:U" />
+</xs:schema>

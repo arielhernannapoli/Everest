@@ -1,0 +1,183 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Everest
+</name>
+</assembly>
+<members>
+<member name="T:QUETOOL.AudienciaRadio.AudienciaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:QUETOOL.AudienciaRadio.DatosAudienciaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:QUETOOL.AudienciaRadio.AudienciaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:QUETOOL.AudienciaRadio.DatosAudienciaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:QUETOOL.AudienciaRadio.AudienciaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:QUETOOL.AudienciaRadio.DatosAudienciaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:QUETOOL.AudienciaRadio">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="M:QUETOOL.frmFormulaOne.SetValuesReporteCalendarioExterior(System.Data.DataTable)">
+	<summary>
+ Setea los valores faltantes en el DataTable
+ </summary>
+	<param name="dtValues">DataTable con los valores</param>
+	<remarks></remarks>
+</member><member name="T:QUETOOL.SpotsLog.Spots_LogDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:QUETOOL.SpotsLog.Spots_Detalle_LogDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:QUETOOL.SpotsLog.CabeceraDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:QUETOOL.SpotsLog.Spots_LogRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:QUETOOL.SpotsLog.Spots_Detalle_LogRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:QUETOOL.SpotsLog.CabeceraRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:QUETOOL.SpotsLog.Spots_LogRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:QUETOOL.SpotsLog.Spots_Detalle_LogRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:QUETOOL.SpotsLog.CabeceraRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:QUETOOL.SpotsLog">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="M:QUETOOL.frmEnviarCompras.generaCompraMMS(System.Data.DataTable)">
+	<summary>
+ Valida el medio con el que se esta trabajando y se realiza la inserccion.
+ </summary>
+	<param name="dtEnvio"></param>
+	<remarks></remarks>
+</member><member name="M:QUETOOL.frmEnviarCompras.GetTemasBySoporte">
+	<summary>
+ Devuelve los temas correspondietnes al soporte.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:QUETOOL.frmEnviarCompras.traerSpotsTodos">
+	<summary>
+ completa la tabla (dtEnvioSpots global)con los spots para enviar a compras
+ </summary>
+	<remarks></remarks>
+</member><member name="M:QUETOOL.frmProgressBar.InsertOrdenesTV">
+	<summary>
+ Agregar Comentarios.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:QUETOOL.AvisosNoConfirmados.AvisosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:QUETOOL.AvisosNoConfirmados.DatosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:QUETOOL.AvisosNoConfirmados.AvisosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:QUETOOL.AvisosNoConfirmados.DatosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:QUETOOL.AvisosNoConfirmados.AvisosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:QUETOOL.AvisosNoConfirmados.DatosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:QUETOOL.AvisosNoConfirmados">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="M:QUETOOL.frmEjercicioMedios.AplicarFormatoDetalle(Infragistics.Win.UltraWinGrid.UltraGridColumn@)">
+	<summary>
+ Aplica el formato Combo al campo detalle.
+ </summary>
+	<param name="pColumna">Columna</param>
+	<remarks></remarks>
+</member><member name="M:QUETOOL.frmEjercicioMedios.ObtenerDetalles">
+	<summary>
+ Genera el DataTable que va a cargar el combo Detalle.
+ </summary>
+	<returns>ValueList</returns>
+	<remarks></remarks>
+</member><member name="T:QUETOOL.AvisosConfirmados.AvisosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:QUETOOL.AvisosConfirmados.AvisosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:QUETOOL.AvisosConfirmados.AvisosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:QUETOOL.AvisosConfirmados">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:QUETOOL.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:QUETOOL.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:QUETOOL.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:QUETOOL.frmBuscar.SetFormatDtSoportesConvenios">
+	<summary>
+ Establece la estructura del DataTable segun el medio.
+ </summary>
+	<returns>DataTable con la estructura.</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="AudienciaRadio" elementFormDefault="qualified" attributeFormDefault="qualified"
+	xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="AudienciaRadio" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Audiencia" nillable="true">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Soporte" type="xs:string" minOccurs="0" nillable="true" msdata:ReadOnly="false" />
+							<xs:element name="Bloque" type="xs:string" minOccurs="0" nillable="true" msdata:ReadOnly="false" />
+							<xs:element name="Rating" type="xs:double" minOccurs="0" nillable="true" msdata:ReadOnly="false" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="DatosAudiencia" nillable="true">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Dias" type="xs:string" minOccurs="0" nillable="true" msdata:ReadOnly="false" />
+							<xs:element name="Target" type="xs:string" minOccurs="0" nillable="true" msdata:ReadOnly="false" />
+							<xs:element name="Trimestre" type="xs:string" minOccurs="0" nillable="true" msdata:ReadOnly="false" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

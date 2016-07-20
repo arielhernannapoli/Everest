@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes.Television" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes.Television" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://www.havas.com/MMS/C/O/TV" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes" />
+  <xs:complexType name="ArrayOfOrdenTelevision">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrdenTelevision" nillable="true" type="tns:OrdenTelevision" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrdenTelevision" nillable="true" type="tns:ArrayOfOrdenTelevision" />
+  <xs:complexType name="OrdenTelevision">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes" base="q1:OrdenOfOfiFXlTOR">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://www.havas.com/MMS/C/O/TV" minOccurs="0" name="Descuentos" nillable="true" type="q2:ArrayOfDR" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OrdenTelevision" nillable="true" type="tns:OrdenTelevision" />
+</xs:schema>

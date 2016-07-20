@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cce04d21-b72f-4e50-b1cb-3e350775368a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://hvmmmspre02.havasmedia.com:8040/MMS/HM.MMS.AR.Server.Service.Ordenes.Television.GestionOrdenes.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="106086ab-d501-4904-9134-5181749850b1" SourceId="1" SourceUrl="http://hvmmmspre02.havasmedia.com:8040/MMS/HM.MMS.AR.Server.Service.Ordenes.Television.GestionOrdenes.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="282d880c-c038-4908-b003-51278776529b" SourceId="1" SourceUrl="http://hvmmmspre02.havasmedia.com:8040/MMS/HM.MMS.AR.Server.Service.Ordenes.Television.GestionOrdenes.svc/mex" />
+    <MetadataFile FileName="HM.MMS.Core.Server.BusinessEntity.Ordenes.RD.xsd" MetadataType="Schema" ID="d106e2c8-6ca2-4c18-8473-309da984f768" SourceId="1" SourceUrl="http://hvmmmspre02.havasmedia.com:8040/MMS/HM.MMS.AR.Server.Service.Ordenes.Television.GestionOrdenes.svc/mex" />
+    <MetadataFile FileName="BC.xsd" MetadataType="Schema" ID="09895ed9-c353-4a9d-a5d5-9523241a05f6" SourceId="1" SourceUrl="http://hvmmmspre02.havasmedia.com:8040/MMS/HM.MMS.AR.Server.Service.Ordenes.Television.GestionOrdenes.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="c07c2dc2-8acd-41df-964f-f2eb05fb9c51" SourceId="1" SourceUrl="http://hvmmmspre02.havasmedia.com:8040/MMS/HM.MMS.AR.Server.Service.Ordenes.Television.GestionOrdenes.svc/mex" />
+    <MetadataFile FileName="S.xsd" MetadataType="Schema" ID="50bab1d3-fc76-469d-bb45-7170c5cf1ab5" SourceId="1" SourceUrl="http://hvmmmspre02.havasmedia.com:8040/MMS/HM.MMS.AR.Server.Service.Ordenes.Television.GestionOrdenes.svc/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="d1287d2a-dced-4802-81f8-f2f713bc6e98" SourceId="1" SourceUrl="http://hvmmmspre02.havasmedia.com:8040/MMS/HM.MMS.AR.Server.Service.Ordenes.Television.GestionOrdenes.svc/mex" />
+    <MetadataFile FileName="HM.MMS.AR.Server.BusinessEntity.Ordenes.Television.xsd" MetadataType="Schema" ID="fb3fc2bb-23c5-4f3d-bd7e-ce1cfc2aa019" SourceId="1" SourceUrl="http://hvmmmspre02.havasmedia.com:8040/MMS/HM.MMS.AR.Server.Service.Ordenes.Television.GestionOrdenes.svc/mex" />
+    <MetadataFile FileName="HM.MMS.AR.Server.BusinessEntity.Ordenes.xsd" MetadataType="Schema" ID="f133e65c-3d91-45f1-ba07-44347641ef0e" SourceId="1" SourceUrl="http://hvmmmspre02.havasmedia.com:8040/MMS/HM.MMS.AR.Server.Service.Ordenes.Television.GestionOrdenes.svc/mex" />
+    <MetadataFile FileName="TV.xsd" MetadataType="Schema" ID="87c3e92e-599a-4775-b301-e15b389e5db3" SourceId="1" SourceUrl="http://hvmmmspre02.havasmedia.com:8040/MMS/HM.MMS.AR.Server.Service.Ordenes.Television.GestionOrdenes.svc/mex" />
+    <MetadataFile FileName="SEF.xsd" MetadataType="Schema" ID="6c64f8f1-dfe0-465f-8ddb-1a831a364fa4" SourceId="1" SourceUrl="http://hvmmmspre02.havasmedia.com:8040/MMS/HM.MMS.AR.Server.Service.Ordenes.Television.GestionOrdenes.svc/mex" />
+    <MetadataFile FileName="C.xsd" MetadataType="Schema" ID="816820a3-d951-4fd2-b6ea-9db75947221b" SourceId="1" SourceUrl="http://hvmmmspre02.havasmedia.com:8040/MMS/HM.MMS.AR.Server.Service.Ordenes.Television.GestionOrdenes.svc/mex" />
+    <MetadataFile FileName="HM.Comun.SolutionEntityFramework.Common.xsd" MetadataType="Schema" ID="73a466aa-51f9-4970-9568-10879a91009c" SourceId="1" SourceUrl="http://hvmmmspre02.havasmedia.com:8040/MMS/HM.MMS.AR.Server.Service.Ordenes.Television.GestionOrdenes.svc/mex" />
+    <MetadataFile FileName="HM.MMS.AR.Server.Service.xsd" MetadataType="Schema" ID="35f9cffe-4490-4137-9bf2-c3186a7e7b59" SourceId="1" SourceUrl="http://hvmmmspre02.havasmedia.com:8040/MMS/HM.MMS.AR.Server.Service.Ordenes.Television.GestionOrdenes.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

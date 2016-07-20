@@ -1,0 +1,72 @@
+[2015/07/31 12:50:38] 
+
+NUEVA CONSULTA CON id 378175, USUARIO 2, TIPO 2
+
+[2015/07/31 12:50:38] Usuario válido
+[2015/07/31 12:50:38] Borra la audiencia de la tabla si existe
+******* Run time exception information begins ****
+When:  Fri Jul 31 12:50:38 2015
+Where: Error code -942 reported by function Compile of ora7_wfo called by vprepare 
+What:  ORA-00942: table or view does not exist
+
+Why:   ??
+Subsystem code:10004,Error code:-942
+SQL: SELECT reboses FROM PROPCONSULTA_EXT WHERE Id_consulta = [#1,<Not Bound>]
+******* Run time exception information ends  *****
+[2015/07/31 12:50:38] Número  de programas : 91
+[2015/07/31 12:50:39] Número de targets: 1
+******* Run time exception information begins ****
+When:  Fri Jul 31 12:50:39 2015
+Where: Analisis de audiencias
+What:  No se ha encontrado fichero de trabajo para alguno de los periodos
+Why:   periodos en Nautilus.ini no coinciden con periodos en consulta
+Subsystem code:0,Error code:3
+******* Run time exception information ends  *****
+******* Run time exception information begins ****
+When:  Fri Jul 31 12:50:39 2015
+Where: Analisis de audiencias (Thread)
+What:  No se ha encontrado fichero de trabajo para alguno de los periodos
+Why:   periodos en Nautilus.ini no coinciden con periodos en consulta
+Subsystem code:0,Error code:3
+******* Run time exception information ends  *****
+[2015/07/31 12:50:39] Se ha producido el error: 
+No se ha encontrado fichero de trabajo para alguno de los periodos
+En:Analisis de audiencias (Thread)
+Causa:periodos en Nautilus.ini no coinciden con periodos en consulta
+La operación no se ha completado.
+[2015/07/31 13:06:14] 
+
+NUEVA CONSULTA CON id 378176, USUARIO 2, TIPO 2
+
+[2015/07/31 13:06:14] Usuario válido
+[2015/07/31 13:06:14] Borra la audiencia de la tabla si existe
+******* Run time exception information begins ****
+When:  Fri Jul 31 13:06:14 2015
+Where: Error code -942 reported by function Compile of ora7_wfo called by vprepare 
+What:  ORA-00942: table or view does not exist
+
+Why:   ??
+Subsystem code:10004,Error code:-942
+SQL: SELECT reboses FROM PROPCONSULTA_EXT WHERE Id_consulta = [#1,<Not Bound>]
+******* Run time exception information ends  *****
+[2015/07/31 13:06:14] Número  de programas : 87
+[2015/07/31 13:06:14] Número de targets: 1
+******* Run time exception information begins ****
+When:  Fri Jul 31 13:06:15 2015
+Where: Analisis de audiencias
+What:  No se ha encontrado fichero de trabajo para alguno de los periodos
+Why:   periodos en Nautilus.ini no coinciden con periodos en consulta
+Subsystem code:0,Error code:3
+******* Run time exception information ends  *****
+******* Run time exception information begins ****
+When:  Fri Jul 31 13:06:16 2015
+Where: Analisis de audiencias (Thread)
+What:  No se ha encontrado fichero de trabajo para alguno de los periodos
+Why:   periodos en Nautilus.ini no coinciden con periodos en consulta
+Subsystem code:0,Error code:3
+******* Run time exception information ends  *****
+[2015/07/31 13:06:16] Se ha producido el error: 
+No se ha encontrado fichero de trabajo para alguno de los periodos
+En:Analisis de audiencias (Thread)
+Causa:periodos en Nautilus.ini no coinciden con periodos en consulta
+La operación no se ha completado.

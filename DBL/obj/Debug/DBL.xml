@@ -1,0 +1,114 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DBL
+</name>
+</assembly>
+<members>
+<member name="M:MPG.DBL.Control_Macheo.BuscarAr_Soportes_Admedia(System.String)">
+	<summary>
+ Trae los códigos de Admedia para los códigos de soporte de la pauta
+ </summary>
+	<param name="codSoporte">Los soportes a buscar</param>
+	<returns>Tabla SOPORTES_ADMEDIA</returns>
+</member><member name="M:MPG.DBL.Control_Macheo.ObtenerOrdenesConfirmadasCPR(System.Int32,System.Int32,System.DateTime,System.DateTime)">
+	<summary>
+ JJP - Obtiene la informacion de ordenes confirmadas de MMS
+ </summary>
+	<param name="codCompania"></param>
+	<param name="codCliente"></param>
+	<param name="fechaDesde">Fecha de ejecucion del aviso desde</param>
+	<param name="fechaHasta">Fecha de ejecucion del aviso hasta</param>
+	<returns>Un diccionario con el valor key vacío en caso de que la operación sea exitosa o con el mensaje de error en caso contrario.
+ \r\n Una lista de OrdenConfirmada</returns>
+	<remarks></remarks>
+</member><member name="M:MPG.DBL.Spots_vp.ObtenerProvincias">
+	<summary>
+ Obtener poblaciones1
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MPG.DBL.Envio_Compras.InsertaAvisos_ext(System.Data.DataTable,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Setea los valores faltantes y los envia a Insertar en MMS.
+ </summary>
+	<param name="dtEnvio">DataTable</param>
+	<param name="idcampaniaMms">Id Campania MMS.</param>
+	<param name="codigoSubCampanaMms">Codigo Sub Campana MMS</param>
+	<param name="mmsCodPais">Codigo Pais.</param>
+	<param name="mmsCodUsuario">Codigo Usuario.</param>
+	<param name="mmsCodCompania">Codigo Compania</param>
+	<param name="codPresupuesto">Codigo Presupuesto.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MPG.DBL.Envio_Compras.InsertaAvisosRadio(System.Data.DataTable,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Inserta los avisos de Radio.
+ </summary>
+	<param name="idcampaniaMms">Id Campania MMS</param>
+	<param name="codigoSubCampanaMms">Sub Campania MMS</param>
+	<returns>DataTable con los codigo de orden.</returns>
+	<remarks></remarks>
+</member><member name="M:MPG.DBL.Envio_Compras.traer_avisos_MMS_EXT(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Trae de la base de datos de Everest los spots para enviar a compras, se completa con los datos de MMS
+ </summary>
+	<param name="cod_campanaMms"></param>
+	<param name="cod_subCampanaMms"></param>
+	<param name="cod_paismms"></param>
+	<param name="cod_Usuariomms"></param>
+	<param name="cod_Companiamms"></param>
+	<param name="id_Material"></param>
+	<param name="id_Producto"></param>
+	<param name="id_campania"></param>
+	<param name="cod_Presupuestomms"></param>
+	<returns>datatable de spots Exterior</returns>
+	<remarks></remarks>
+</member><member name="M:MPG.DBL.Envio_Compras.InsertaAvisosMMS(System.Data.DataTable,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Inserta los spots y devuelve otro datatable con las ordenes de MMS
+ </summary>
+	<param name="dt"></param>
+	<param name="idcampaniaMms"></param>
+	<param name="codigoSubCampanaMms"></param>
+	<param name="mmsCodPais"></param>
+	<param name="mmsCodUsuario"></param>
+	<param name="mmsCodCompania"></param>
+	<param name="mmsCodCliente"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MPG.DBL.Envio_Compras.InsertaAvisos(System.Int32,System.Int64,System.Int64,System.Int64)">
+	<summary>
+ Actualiza la tabla de Spots_detalle con los codigos de orden de mms, cambio de estado a compra
+ </summary>
+	<param name="Intercambio"></param>
+	<param name="id_spot">Id Spot</param>
+	<param name="id_spot_detalle">Id Spot Detalle</param>
+	<param name="id_orden_mms">Id Orden</param>
+	<remarks></remarks>
+</member><member name="M:MPG.DBL.Spots_detalle.ConcatenarDesMaterial(System.Data.DataTable,System.String)">
+	<summary>
+ Concatena el Id del tema con la descripcion del Material
+ </summary>
+	<param name="_dtTemas">Contiene el registro a modificar</param>
+	<param name="_descMaterial">Descripcion del Material</param>
+	<returns>DataTable Modificado</returns>
+	<remarks></remarks>
+</member><member name="M:MPG.DBL.Clientes.BuscarPorIDSAG(System.DateTime,System.DateTime)">
+	<summary>
+ trae sags del cliente y medio
+ </summary>
+	<param name="f_inicio"></param>
+	<param name="f_fin"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MPG.DBL.Clientes.TraerTodos">
+	<summary>
+ obtiene datatable de los clientes a travez de MSL
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

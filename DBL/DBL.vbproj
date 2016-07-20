@@ -1,0 +1,369 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E00D9114-7183-4AD0-BFBA-5DDD3B2046A7}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>DBL</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>MPG.DBL</RootNamespace>
+    <StartupObject>MPG.DBL.%28Ninguno%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>DBL.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>DBL.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HM.Comun.Seguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.Comun.Seguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.Comun.SolutionEntityFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.Comun.SolutionEntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.Comun.Varios, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.Comun.Varios.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.Contratos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.Contratos.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.MMS.AR.Server.BusinessEntity.Control, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.MMS.AR.Server.BusinessEntity.Control.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\app\alejandro.guzzardi\product\11.2.0\client_2\ODP.NET\bin\2.x\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>True</Private>
+    </Reference>
+    <ProjectReference Include="..\Admedia.DBL\Admedia.DBL.csproj">
+      <Project>{F68C7819-CE62-4D87-9167-71E972534206}</Project>
+      <Name>Admedia.DBL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.vbproj">
+      <Project>{4358D9C5-B78C-4E91-9279-05CCE29EE9C8}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Excepciones\Excepciones.vbproj">
+      <Name>Excepciones</Name>
+      <Project>{1E5A1777-96B5-45B3-84A5-5AAFE21BA0FA}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Framework.vbproj">
+      <Project>{35CF9F8E-7FDE-4889-A8DF-52825CCCEBD4}</Project>
+      <Name>Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MSL\MSL.csproj">
+      <Project>{1000C9CD-0CA9-4A92-9FEE-1723E43391C7}</Project>
+      <Name>MSL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MSL\MSL.csproj">
+      <Project>{1000C9CD-0CA9-4A92-9FEE-1723E43391C7}</Project>
+      <Name>MSL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Excepciones" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MPG.DAL" />
+    <Import Include="Oracle.DataAccess.Client" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agencia.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Alternativas.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Alternativas_Soportes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Alternativas_Temas.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Audiencias_Fechas.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Audiencia_RD.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Audiencia_TVA.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Audiencia_TVC.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Audiencia_TVI.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AudProg_Ext.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Avisos_Nautilus.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Campaña.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clientes.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Colocaciones.vb" />
+    <Compile Include="Control_Macheo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Convenios.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compania.vb" />
+    <Compile Include="Cubo_Listados.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Detalle_AGIP.vb" />
+    <Compile Include="Ejercicios.Vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ejercicios_estado.Vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Envio_Compras.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Envio_Ligero_MMS.vb" />
+    <Compile Include="Formatos.vb" />
+    <Compile Include="Franjas.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Franjas_Detalle.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="I_AudProg_Ext.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="I_Programa_Ext.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="I_Targets_Ext.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Materiales.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Padron_AGIP.vb" />
+    <Compile Include="Pautas_mp.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Plazas.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Plazas_Medicion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Poblacion.vb" />
+    <Compile Include="Productos.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Productos_Nautilus.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Programas.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Programas_Monitor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Programa_Ext.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Secciones.vb" />
+    <Compile Include="Servico_Agencia.vb" />
+    <Compile Include="Settings.vb" />
+    <Compile Include="Sistemas.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistemas_estado.Vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Soportes.Vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Soportes_Interior.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Soportes_Sigeme_Monitor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Soportes_Sigeme_Telereport.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Spots.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Spots_Detalle.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Spots_Detalle_Log.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Spots_int.vb" />
+    <Compile Include="Spots_pr.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Spots_VP.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tandas_TVA.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Targets.Vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Targets_Ext.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Targets_Nautilus.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Targets_Nautilus_interior.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Targets_Telereport.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tarifas_Internet.vb" />
+    <Compile Include="Tarifas_Tv.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Temas.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tipos_soporte.Vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tipo_Elemento_VP.vb" />
+    <Compile Include="Usuario.vb">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/HM.MMS.Core.Server.BusinessEntity.Ordenes.RD" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/HM.MMS.Core.Server.BusinessEntity.Ordenes.RD" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://www.havas.com/C/SEF/BC" />
+  <xs:complexType name="Cuna">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://www.havas.com/C/SEF/BC" base="q1:BSE">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClaveMaterial" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CodCompania" type="xs:int" />
+          <xs:element minOccurs="0" name="CodCuna" type="xs:int" />
+          <xs:element minOccurs="0" name="CodMaterial" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CodOrden" type="xs:int" />
+          <xs:element minOccurs="0" name="CodPais" type="xs:int" />
+          <xs:element minOccurs="0" name="DescMaterial" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FechaCuna" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="NumInsercionesCuna" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Cuna" nillable="true" type="tns:Cuna" />
+</xs:schema>

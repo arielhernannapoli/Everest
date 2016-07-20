@@ -1,0 +1,1714 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D80F0B3-6626-42FC-A7C4-51399CD4AB23}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Everest.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Everest</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>QUETOOL</RootNamespace>
+    <StartupObject>QUETOOL.frmPrincipal</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>http://localhost/Everest/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Everest.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Everest.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AMS.Profile, Version=1.1.1535.26509, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\AMS.Profile.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.DynamiCubeLib, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\AxInterop.DynamiCubeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.prjJanChart, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\AxInterop.prjJanChart.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.SHDocVw, Version=1.1.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\AxInterop.SHDocVw.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.VCF150, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\AxInterop.VCF150.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML, Version=0.68.1.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=11.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\REFERENCIAS\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=11.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\REFERENCIAS\CrystalDecisions.ReportSource.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=11.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\REFERENCIAS\CrystalDecisions.Shared.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=11.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\REFERENCIAS\CrystalDecisions.Windows.Forms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v9.2, Version=9.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Controls.Data.v6.3, Version=9.2.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\DevExpress.DXCore.Controls.Data.v6.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Controls.Utils.v6.3, Version=9.2.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\DevExpress.DXCore.Controls.Utils.v6.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Controls.XtraEditors.v6.3, Version=9.2.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\DevExpress.DXCore.Controls.XtraEditors.v6.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Controls.XtraPivotGrid.v6.3, Version=9.2.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\DevExpress.DXCore.Controls.XtraPivotGrid.v6.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Controls.XtraPivotGrid.v6.3.Core, Version=9.2.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\DevExpress.DXCore.Controls.XtraPivotGrid.v6.3.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v9.2, Version=9.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v9.2, Version=9.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v9.2, Version=9.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v9.2.Core, Version=9.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v9.2.Design, Version=9.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core, Version=1.6.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms, Version=1.6.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.Comun.Compresion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.Comun.Compresion.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.Comun.ExecutionArchitecture, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.Comun.ExecutionArchitecture.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.Comun.SolutionEntityFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\REFERENCIAS\HM.Comun.SolutionEntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.Comun.Utilidades, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.Comun.Utilidades.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.Comun.Varios, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.Comun.Varios.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.Contratos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.Contratos.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.Localizacion.AR, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.Localizacion.AR.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.MMS.AR.Client.Reportes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\REFERENCIAS\HM.MMS.AR.Client.Reportes.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.MMS.AR.Server.BusinessComponent.Control, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.MMS.AR.Server.BusinessComponent.Control.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.MMS.AR.Server.BusinessEntity.Control, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.MMS.AR.Server.BusinessEntity.Control.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.MMS.AR.Server.BusinessEntity.Ordenes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\REFERENCIAS\HM.MMS.AR.Server.BusinessEntity.Ordenes.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.MMS.AR.Utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.MMS.AR.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.MMS.Core.Server.BusinessComponent.Ordenes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.MMS.Core.Server.BusinessComponent.Ordenes.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.MMS.Core.Server.BusinessEntity.Ordenes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\REFERENCIAS\HM.MMS.Core.Server.BusinessEntity.Ordenes.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.MMS.Core.Server.BusinessEntity.Seguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\REFERENCIAS\HM.MMS.Core.Server.BusinessEntity.Seguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Excel.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ariel.napoli\Desktop\Infragistics\Infragistics.Excel.v5.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.Shared.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ariel.napoli\Desktop\Infragistics\Infragistics.Shared.v5.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.Win.Misc.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ariel.napoli\Desktop\Infragistics\Infragistics.Win.Misc.v5.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinChart.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ariel.napoli\Desktop\Infragistics\Infragistics.Win.UltraWinChart.v5.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinDataSource.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ariel.napoli\Desktop\Infragistics\Infragistics.Win.UltraWinDataSource.v5.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinDock.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ariel.napoli\Desktop\Infragistics\Infragistics.Win.UltraWinDock.v5.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinEditors.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ariel.napoli\Desktop\Infragistics\Infragistics.Win.UltraWinEditors.v5.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinExplorerBar.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ariel.napoli\Desktop\Infragistics\Infragistics.Win.UltraWinExplorerBar.v5.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinGrid.ExcelExport.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ariel.napoli\Desktop\Infragistics\Infragistics.Win.UltraWinGrid.ExcelExport.v5.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinGrid.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ariel.napoli\Desktop\Infragistics\Infragistics.Win.UltraWinGrid.v5.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinListBar.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ariel.napoli\Desktop\Infragistics\Infragistics.Win.UltraWinListBar.v5.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinMaskedEdit.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ariel.napoli\Desktop\Infragistics\Infragistics.Win.UltraWinMaskedEdit.v5.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinPrintPreviewDialog.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ariel.napoli\Desktop\Infragistics\Infragistics.Win.UltraWinPrintPreviewDialog.v5.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinSchedule.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ariel.napoli\Desktop\Infragistics\Infragistics.Win.UltraWinSchedule.v5.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinStatusBar.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ariel.napoli\Desktop\Infragistics\Infragistics.Win.UltraWinStatusBar.v5.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinTabControl.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ariel.napoli\Desktop\Infragistics\Infragistics.Win.UltraWinTabControl.v5.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinToolbars.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ariel.napoli\Desktop\Infragistics\Infragistics.Win.UltraWinToolbars.v5.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinTree.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ariel.napoli\Desktop\Infragistics\Infragistics.Win.UltraWinTree.v5.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.Win.v5.3, Version=5.3.20053.50, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ariel.napoli\Desktop\Infragistics\Infragistics.Win.v5.3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Interop.DynamiCubeLib, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\Interop.DynamiCubeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.MotorSimulador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\Everest\Interop.MotorSimulador.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.prjJanChart, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\Everest\Interop.prjJanChart.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.StdType, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\Everest\Interop.StdType.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.VCF150, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\Everest\Interop.VCF150.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Oracle\product\11.2.0\client_1\odp.net\bin\2.x\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Name>System.Runtime.Serialization.Formatters.Soap</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>True</Private>
+    </Reference>
+    <ProjectReference Include="..\DBL\DBL.vbproj">
+      <Project>{E00D9114-7183-4AD0-BFBA-5DDD3B2046A7}</Project>
+      <Name>DBL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Excepciones\Excepciones.vbproj">
+      <Name>Excepciones</Name>
+      <Project>{1E5A1777-96B5-45B3-84A5-5AAFE21BA0FA}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Framework.vbproj">
+      <Project>{35CF9F8E-7FDE-4889-A8DF-52825CCCEBD4}</Project>
+      <Name>Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MSL\MSL.csproj">
+      <Project>{1000C9CD-0CA9-4A92-9FEE-1723E43391C7}</Project>
+      <Name>MSL</Name>
+    </ProjectReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Excepciones" />
+    <Import Include="Framework" />
+    <Import Include="Infragistics.Win.UltraWinTree" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MPG.DBL" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABMIntercambios.Designer.vb">
+      <DependentUpon>ABMIntercambios.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ABMIntercambios.vb">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ABMs\abmAlternativas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ABMs\abmCampaña.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ABMs\abmEjercicios.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ABMs\abmSistemas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ABMs\abmTema.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ABMs\frmIngresarEjercicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\ResEvaluacionDF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ABMs\ResEvaluacionRA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnexoConvenio.vb" />
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BarraEstado.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Calendarios\CalendarioDiario.vb" />
+    <Compile Include="Calendarios\CalendarioDiarioConLetras.vb" />
+    <Compile Include="Calendarios\CalendarioDiarioConNumeros.vb" />
+    <Compile Include="Calendarios\TVRadio\CalendarioDiarioConLetrasTVRadio.vb" />
+    <Compile Include="Calendarios\TVRadio\CalendarioDiarioConNumerosTVRadio.vb" />
+    <Compile Include="Calendarios\TVRadio\CalendarioDiarioTVRadio.vb" />
+    <Compile Include="CargarAudienciaTVA_MW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cubos\Cubo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cubos\CuboDock.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cubos\CuboEjercicios.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cubos\ICubo.vb" />
+    <Compile Include="CuboFlex.Designer.vb">
+      <DependentUpon>CuboFlex.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CuboFlex.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminPerfil.Designer.vb">
+      <DependentUpon>frmAdminPerfil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminPerfil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaTarifasInternet.Designer.vb">
+      <DependentUpon>frmAltaTarifasInternet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltaTarifasInternet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexosConvenio.Designer.vb">
+      <DependentUpon>frmAnexosConvenio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexosConvenio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAvisosAjuste.Designer.vb">
+      <DependentUpon>frmAvisosAjuste.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAvisosAjuste.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAvisosDiferencia.Designer.vb">
+      <DependentUpon>frmAvisosDiferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAvisosDiferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAvisosVigente.Designer.vb">
+      <DependentUpon>frmAvisosVigente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAvisosVigente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAvisosVigenteTarifas.Designer.vb">
+      <DependentUpon>frmAvisosVigenteTarifas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAvisosVigenteTarifas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCambiarCompania.Designer.vb">
+      <DependentUpon>frmCambiarCompania.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCambiarCompania.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargarPadronAGIP.Designer.vb">
+      <DependentUpon>frmCargarPadronAGIP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCargarPadronAGIP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConvenioEspecial.Designer.vb">
+      <DependentUpon>frmConvenioEspecial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConvenioEspecial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDistribuidor.Designer.vb">
+      <DependentUpon>frmDistribuidor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDistribuidor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConveniosReporte.Designer.vb">
+      <DependentUpon>FrmConveniosReporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConveniosReporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDuplicarConveniosMasivo.Designer.vb">
+      <DependentUpon>frmDuplicarConveniosMasivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDuplicarConveniosMasivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEjerciciosInternet.Designer.vb">
+      <DependentUpon>frmEjerciciosInternet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEjerciciosInternet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmElegirFechaVigencia.Designer.vb">
+      <DependentUpon>frmElegirFechaVigencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmElegirFechaVigencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiltrarPadronAGIP.Designer.vb">
+      <DependentUpon>frmFiltrarPadronAGIP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFiltrarPadronAGIP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiltrarPadronAGIPMasivo.Designer.vb">
+      <DependentUpon>frmFiltrarPadronAGIPMasivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFiltrarPadronAGIPMasivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiltrarSoporteInternet.Designer.vb">
+      <DependentUpon>frmFiltrarSoporteInternet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFiltrarSoporteInternet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiltrarUbicacionesInt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMailFax.Designer.vb">
+      <DependentUpon>frmMailFax.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMailFax.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMapaAGIP.Designer.vb">
+      <DependentUpon>frmMapaAGIP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMapaAGIP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessage.Designer.vb">
+      <DependentUpon>frmMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMostrarCprSoporte.Designer.vb">
+      <DependentUpon>frmMostrarCprSoporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMostrarCprSoporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComparaCeldaCopiada.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controles\cboCombo.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\cboComboWindows.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\chkCheck.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\clbCheckListBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\dtpFecha.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\lstLista.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\MapeoColores.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controles\optOpcion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\txtTexto.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmCpEjercicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cubo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DC.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FOne.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form12.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmABMAudienciaFechas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmABMClienteExterno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActualizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActualizarTarifasCongeladas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActualizarTema.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarAgencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarObservacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarOrden.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaTarifa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAudienciaRadio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAuspicio.designer.vb">
+      <DependentUpon>frmAuspicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAuspicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAviso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAvisoCaido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarIntercambio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarPorPeriodo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargarAudienciaTVA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargarAudienciaTVC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargarAudienciaTVI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargarProgMonitor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargaTarifa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmColumnas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfirmacionAvisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaConvenio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarAudienciaFecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConvenios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConveniosMedios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCopiarTarifa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDesconfirmacionAvisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDesmarcarProgramas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDuplicarConvenios.Designer.vb">
+      <DependentUpon>frmDuplicarConvenios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDuplicarConvenios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEjercicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEjercicioMedios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmElegirCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmElegirSoporteFecha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmElegirTarifa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnviarCompras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEvaluar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiltrarResumenEconomico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiltrarResumenPrograma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiltrarSoporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiltrarSoporteTema.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiltroCalendario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFormulaOne.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFranjas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMacheoAvisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimientoConvenio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMateriales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMostrarEmisiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPAPCAsignados.Designer.vb">
+      <DependentUpon>frmPAPCAsignados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPAPCAsignados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPerfiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPreEvaluar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPresupuestosPA.Designer.vb">
+      <DependentUpon>frmPresupuestosPA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPresupuestosPA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPresupuestosPendientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipalControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgresoCargaGrilla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgressBar.Designer.vb">
+      <DependentUpon>frmProgressBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmProgressBar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReemplazarTemas.Designer.vb">
+      <DependentUpon>frmReemplazarTemas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReemplazarTemas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelacionarProgramas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteLineHoja.Designer.vb">
+      <DependentUpon>frmReporteLineHoja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteLineHoja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmreporteRegionalCotizadorDolar.Designer.vb">
+      <DependentUpon>frmreporteRegionalCotizadorDolar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmreporteRegionalCotizadorDolar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteTarifas.Designer.vb">
+      <DependentUpon>frmReporteTarifas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteTarifas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRol.Designer.vb">
+      <DependentUpon>frmRol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRol.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSeguimientoCPR.Designer.vb">
+      <DependentUpon>FrmSeguimientoCPR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSeguimientoCPR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeguimientoCPRxFranjaHoraria.Designer.vb">
+      <DependentUpon>frmSeguimientoCPRxFranjaHoraria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeguimientoCPRxFranjaHoraria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeleccionarTConvRentabilidad.Designer.vb">
+      <DependentUpon>frmSeleccionarTConvRentabilidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeleccionarTConvRentabilidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTarifasAnteriores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTarifasNoEncontradas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVigencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frnUsuariosAprobadores.Designer.vb">
+      <DependentUpon>frnUsuariosAprobadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frnUsuariosAprobadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FuncionesRuta.vb" />
+    <Compile Include="Funciones\ExcelEstructuras.vb" />
+    <Compile Include="Funciones\ExcelFunciones.vb" />
+    <Compile Include="Grilla.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Importacion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteConvenioLog.Designer.vb">
+      <DependentUpon>ReporteConvenioLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteConvenioLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteConveniosWeb.Designer.vb">
+      <DependentUpon>ReporteConveniosWeb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteConveniosWeb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\AudienciaRadio.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AudienciaRadio.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\AvisosConfirmados.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvisosConfirmados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\AvisosNoConfirmados.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvisosNoConfirmados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\AvisosNoConfirmados.vb">
+      <DependentUpon>AvisosNoConfirmados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\frmAudiencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\frmAvisosConfirmados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\frmAvisosNoConfirmados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\frmPlanificacionModificadaLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte\rptAudienciaRadio.vb">
+      <DependentUpon>rptAudienciaRadio.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reporte\rptAvisosConfirmados.vb">
+      <DependentUpon>rptAvisosConfirmados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reporte\rptAvisosConfirmados1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptAvisosConfirmados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte\rptAvisosConfirmadosResumen.vb">
+      <DependentUpon>rptAvisosConfirmadosResumen.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reporte\rptAvisosNoConfirmados.vb">
+      <DependentUpon>rptAvisosNoConfirmados.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporte\rptAvisosNoConfirmadosTarifa.vb">
+      <DependentUpon>rptAvisosNoConfirmadosTarifa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reporte\rptPlanificacionModificadaLog.vb">
+      <DependentUpon>rptPlanificacionModificadaLog.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reporte\SpotsLog.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpotsLog.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SeccionActiva.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="ABMIntercambios.resx">
+      <DependentUpon>ABMIntercambios.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\abmAlternativas.resx">
+      <DependentUpon>abmAlternativas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\abmCampaña.resx">
+      <DependentUpon>abmCampaña.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\abmEjercicios.resx">
+      <DependentUpon>abmEjercicios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\abmSistemas.resx">
+      <DependentUpon>abmSistemas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\abmTema.resx">
+      <DependentUpon>abmTema.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\frmIngresarEjercicio.resx">
+      <DependentUpon>frmIngresarEjercicio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\ResEvaluacionDF.resx">
+      <DependentUpon>ResEvaluacionDF.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\ResEvaluacionRA.resx">
+      <DependentUpon>ResEvaluacionRA.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CargarAudienciaTVA_MW.resx">
+      <DependentUpon>CargarAudienciaTVA_MW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CuboFlex.resx">
+      <DependentUpon>CuboFlex.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminPerfil.resx">
+      <DependentUpon>frmAdminPerfil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaTarifasInternet.resx">
+      <DependentUpon>frmAltaTarifasInternet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexosConvenio.resx">
+      <DependentUpon>frmAnexosConvenio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAvisosAjuste.resx">
+      <DependentUpon>frmAvisosAjuste.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAvisosDiferencia.resx">
+      <DependentUpon>frmAvisosDiferencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAvisosVigente.resx">
+      <DependentUpon>frmAvisosVigente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAvisosVigenteTarifas.resx">
+      <DependentUpon>frmAvisosVigenteTarifas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCambiarCompania.resx">
+      <DependentUpon>frmCambiarCompania.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCargarPadronAGIP.resx">
+      <DependentUpon>frmCargarPadronAGIP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConvenioEspecial.resx">
+      <DependentUpon>frmConvenioEspecial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConveniosReporte.resx">
+      <DependentUpon>FrmConveniosReporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDistribuidor.resx">
+      <DependentUpon>frmDistribuidor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDuplicarConveniosMasivo.resx">
+      <DependentUpon>frmDuplicarConveniosMasivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEjerciciosInternet.resx">
+      <DependentUpon>frmEjerciciosInternet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmElegirFechaVigencia.resx">
+      <DependentUpon>frmElegirFechaVigencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiltrarPadronAGIP.resx">
+      <DependentUpon>frmFiltrarPadronAGIP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiltrarPadronAGIPMasivo.resx">
+      <DependentUpon>frmFiltrarPadronAGIPMasivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiltrarSoporteInternet.resx">
+      <DependentUpon>frmFiltrarSoporteInternet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiltrarUbicacionesInt.resx">
+      <DependentUpon>frmFiltrarUbicacionesInt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMailFax.resx">
+      <DependentUpon>frmMailFax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMapaAGIP.resx">
+      <DependentUpon>frmMapaAGIP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMessage.resx">
+      <DependentUpon>frmMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMostrarCprSoporte.resx">
+      <DependentUpon>frmMostrarCprSoporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\cboCombo.resx">
+      <DependentUpon>cboCombo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\cboComboWindows.resx">
+      <DependentUpon>cboComboWindows.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\chkCheck.resx">
+      <DependentUpon>chkCheck.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\clbCheckListBox.resx">
+      <DependentUpon>clbCheckListBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\dtpFecha.resx">
+      <DependentUpon>dtpFecha.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\lstLista.resx">
+      <DependentUpon>lstLista.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\optOpcion.resx">
+      <DependentUpon>optOpcion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\txtTexto.resx">
+      <DependentUpon>txtTexto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCpEjercicio.resx">
+      <DependentUpon>frmCpEjercicio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cubo.resx">
+      <DependentUpon>Cubo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form12.resx">
+      <DependentUpon>Form12.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmABMAudienciaFechas.resx">
+      <DependentUpon>frmABMAudienciaFechas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmABMClienteExterno.resx">
+      <DependentUpon>frmABMClienteExterno.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActualizar.resx">
+      <DependentUpon>frmActualizar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActualizarTarifasCongeladas.resx">
+      <DependentUpon>frmActualizarTarifasCongeladas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActualizarTema.resx">
+      <DependentUpon>frmActualizarTema.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarAgencia.resx">
+      <DependentUpon>frmAgregarAgencia.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarObservacion.resx">
+      <DependentUpon>frmAgregarObservacion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarOrden.resx">
+      <DependentUpon>frmAgregarOrden.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaTarifa.resx">
+      <DependentUpon>frmAltaTarifa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAudienciaRadio.resx">
+      <DependentUpon>frmAudienciaRadio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuspicio.resx">
+      <DependentUpon>frmAuspicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAviso.resx">
+      <DependentUpon>frmAviso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAvisoCaido.resx">
+      <DependentUpon>frmAvisoCaido.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscar.resx">
+      <DependentUpon>frmBuscar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarIntercambio.resx">
+      <DependentUpon>frmBuscarIntercambio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarPorPeriodo.resx">
+      <DependentUpon>frmBuscarPorPeriodo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCargarAudienciaTVA.resx">
+      <DependentUpon>frmCargarAudienciaTVA.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCargarAudienciaTVC.resx">
+      <DependentUpon>frmCargarAudienciaTVC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCargarAudienciaTVI.resx">
+      <DependentUpon>frmCargarAudienciaTVI.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCargarProgMonitor.resx">
+      <DependentUpon>frmCargarProgMonitor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCargaTarifa.resx">
+      <DependentUpon>frmCargaTarifa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmColumnas.resx">
+      <DependentUpon>frmColumnas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfirmacionAvisos.resx">
+      <DependentUpon>frmConfirmacionAvisos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaConvenio.resx">
+      <DependentUpon>frmConsultaConvenio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarAudienciaFecha.resx">
+      <DependentUpon>frmConsultarAudienciaFecha.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConvenios.resx">
+      <DependentUpon>frmConvenios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConveniosMedios.resx">
+      <DependentUpon>frmConveniosMedios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCopiarTarifa.resx">
+      <DependentUpon>frmCopiarTarifa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDesconfirmacionAvisos.resx">
+      <DependentUpon>frmDesconfirmacionAvisos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDesmarcarProgramas.resx">
+      <DependentUpon>frmDesmarcarProgramas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalle.resx">
+      <DependentUpon>frmDetalle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDuplicarConvenios.resx">
+      <DependentUpon>frmDuplicarConvenios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEjercicio.resx">
+      <DependentUpon>frmEjercicio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEjercicioMedios.resx">
+      <DependentUpon>frmEjercicioMedios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmElegirCliente.resx">
+      <DependentUpon>frmElegirCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmElegirSoporteFecha.resx">
+      <DependentUpon>frmElegirSoporteFecha.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmElegirTarifa.resx">
+      <DependentUpon>frmElegirTarifa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnviarCompras.resx">
+      <DependentUpon>frmEnviarCompras.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEvaluar.resx">
+      <DependentUpon>frmEvaluar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiltrarResumenEconomico.resx">
+      <DependentUpon>frmFiltrarResumenEconomico.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiltrarResumenPrograma.resx">
+      <DependentUpon>frmFiltrarResumenPrograma.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiltrarSoporte.resx">
+      <DependentUpon>frmFiltrarSoporte.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiltrarSoporteTema.resx">
+      <DependentUpon>frmFiltrarSoporteTema.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiltroCalendario.resx">
+      <DependentUpon>frmFiltroCalendario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFormulaOne.resx">
+      <DependentUpon>frmFormulaOne.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFranjas.resx">
+      <DependentUpon>frmFranjas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportacion.resx">
+      <DependentUpon>frmImportacion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogIn.resx">
+      <DependentUpon>frmLogIn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMacheoAvisos.resx">
+      <DependentUpon>frmMacheoAvisos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoConvenio.resx">
+      <DependentUpon>frmMantenimientoConvenio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMateriales.resx">
+      <DependentUpon>frmMateriales.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMostrarEmisiones.resx">
+      <DependentUpon>frmMostrarEmisiones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPAPCAsignados.resx">
+      <DependentUpon>frmPAPCAsignados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPerfiles.resx">
+      <DependentUpon>frmPerfiles.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPreEvaluar.resx">
+      <DependentUpon>frmPreEvaluar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPresupuestosPA.resx">
+      <DependentUpon>frmPresupuestosPA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPresupuestosPendientes.resx">
+      <DependentUpon>frmPresupuestosPendientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipalControl.resx">
+      <DependentUpon>frmPrincipalControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgresoCargaGrilla.resx">
+      <DependentUpon>frmProgresoCargaGrilla.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgressBar.resx">
+      <DependentUpon>frmProgressBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReemplazarTemas.resx">
+      <DependentUpon>frmReemplazarTemas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelacionarProgramas.resx">
+      <DependentUpon>frmRelacionarProgramas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteLineHoja.resx">
+      <DependentUpon>frmReporteLineHoja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmreporteRegionalCotizadorDolar.resx">
+      <DependentUpon>frmreporteRegionalCotizadorDolar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteTarifas.resx">
+      <DependentUpon>frmReporteTarifas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRol.resx">
+      <DependentUpon>frmRol.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSeguimientoCPR.resx">
+      <DependentUpon>FrmSeguimientoCPR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguimientoCPRxFranjaHoraria.resx">
+      <DependentUpon>frmSeguimientoCPRxFranjaHoraria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeleccionarTConvRentabilidad.resx">
+      <DependentUpon>frmSeleccionarTConvRentabilidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTarifasAnteriores.resx">
+      <DependentUpon>frmTarifasAnteriores.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTarifasNoEncontradas.resx">
+      <DependentUpon>frmTarifasNoEncontradas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVigencia.resx">
+      <DependentUpon>FrmVigencia.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frnUsuariosAprobadores.resx">
+      <DependentUpon>frnUsuariosAprobadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteConvenioLog.resx">
+      <DependentUpon>ReporteConvenioLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteConveniosWeb.resx">
+      <DependentUpon>ReporteConveniosWeb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\frmAudiencia.resx">
+      <DependentUpon>frmAudiencia.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\frmAvisosConfirmados.resx">
+      <DependentUpon>frmAvisosConfirmados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\frmAvisosNoConfirmados.resx">
+      <DependentUpon>frmAvisosNoConfirmados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\frmPlanificacionModificadaLog.resx">
+      <DependentUpon>frmPlanificacionModificadaLog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\rptAudienciaRadio.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAudienciaRadio.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\rptAvisosConfirmados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAvisosConfirmados1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\rptAvisosConfirmadosResumen.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAvisosConfirmadosResumen.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\rptAvisosNoConfirmados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAvisosNoConfirmados.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\rptAvisosNoConfirmadosTarifa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAvisosNoConfirmadosTarifa1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte\rptPlanificacionModificadaLog.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPlanificacionModificadaLog.vb</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Argentina_Client.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Calendarios\UMLClassCalendarios.cd" />
+    <None Include="Core_Client.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Everest.ico" />
+    <Content Include="Reporte\AudienciaRadio.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AudienciaRadio.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reporte\AvisosConfirmados.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvisosConfirmados.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reporte\AvisosNoConfirmados.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AvisosNoConfirmados.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reporte\SpotsLog.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SpotsLog.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Reporte\AudienciaRadio.xsc">
+      <DependentUpon>AudienciaRadio.xsd</DependentUpon>
+    </None>
+    <None Include="Reporte\AudienciaRadio.xsx">
+      <DependentUpon>AudienciaRadio.xsd</DependentUpon>
+    </None>
+    <None Include="Reporte\AvisosConfirmados.xsc">
+      <DependentUpon>AvisosConfirmados.xsd</DependentUpon>
+    </None>
+    <None Include="Reporte\AvisosConfirmados.xss">
+      <DependentUpon>AvisosConfirmados.xsd</DependentUpon>
+    </None>
+    <None Include="Reporte\AvisosConfirmados.xsx">
+      <DependentUpon>AvisosConfirmados.xsd</DependentUpon>
+    </None>
+    <None Include="Reporte\AvisosNoConfirmados.xsc">
+      <DependentUpon>AvisosNoConfirmados.xsd</DependentUpon>
+    </None>
+    <None Include="Reporte\AvisosNoConfirmados.xss">
+      <DependentUpon>AvisosNoConfirmados.xsd</DependentUpon>
+    </None>
+    <None Include="Reporte\AvisosNoConfirmados.xsx">
+      <DependentUpon>AvisosNoConfirmados.xsd</DependentUpon>
+    </None>
+    <None Include="Reporte\SpotsLog.xsc">
+      <DependentUpon>SpotsLog.xsd</DependentUpon>
+    </None>
+    <None Include="Reporte\SpotsLog.xsx">
+      <DependentUpon>SpotsLog.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

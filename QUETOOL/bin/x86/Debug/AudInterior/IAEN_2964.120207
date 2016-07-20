@@ -1,0 +1,36 @@
+[2007/02/12 16:31:43] 
+
+NUEVA CONSULTA CON id 126314, USUARIO 2, TIPO 2
+
+[2007/02/12 16:31:43] Usuario válido
+[2007/02/12 16:31:43] Borra la audiencia de la tabla si existe
+[2007/02/12 16:31:43] Número  de programas : 143
+[2007/02/12 16:31:43] Número de targets: 1
+[2007/02/12 16:31:44] Comienza la ejecución del motor ...
+******* Run time exception information begins ****
+When:  Mon Feb 12 16:31:44 2007
+Where: safe_fopen
+What:  Error de apertura en fichero n:\fichint\semana38int06.db
+Why:   no existe el fichero, path erróneo o no hay acceso al disco
+Subsystem code:0,Error code:49
+******* Run time exception information ends  *****
+[2007/02/12 16:31:44] No pude abrir el fichero de trabajo . (Analisis)
+******* Run time exception information begins ****
+When:  Mon Feb 12 16:31:44 2007
+Where: Análisis_de_Audiencias : db
+What:  Error de apertura en fichero n:\fichint\semana38int06.db
+Why:   no existe el fichero, path erróneo o no hay acceso al disco
+Subsystem code:0,Error code:49
+******* Run time exception information ends  *****
+******* Run time exception information begins ****
+When:  Mon Feb 12 16:31:44 2007
+Where: Análisis_de_Audiencias : db (Thread)
+What:  Error de apertura en fichero n:\fichint\semana38int06.db
+Why:   no existe el fichero, path erróneo o no hay acceso al disco
+Subsystem code:0,Error code:49
+******* Run time exception information ends  *****
+[2007/02/12 16:31:44] Se ha producido el error: 
+Error de apertura en fichero n:\fichint\semana38int06.db
+En:Análisis_de_Audiencias : db (Thread)
+Causa:no existe el fichero, path erróneo o no hay acceso al disco
+La operación no se ha completado.

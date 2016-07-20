@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D8106E49-ECF3-4ECB-B4A2-172DC2F5F78F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SIM</RootNamespace>
+    <AssemblyName>SIM</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Utils.v9.2, Version=9.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\DevExpress.Utils.v9.2.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.Comun.Persistencia.Entidad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.Comun.Persistencia.Entidad.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.Comun.SolutionEntityFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.Comun.SolutionEntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.Comun.Utilidades, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.Comun.Utilidades.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.Comun.Varios, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.Comun.Varios.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.Contratos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.Contratos.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.Localizacion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.Localizacion.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.MMS.Agentes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.MMS.Agentes.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.MMS.AR.Client.Agentes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.MMS.AR.Client.Agentes.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.MMS.AR.Client.Reportes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.MMS.AR.Client.Reportes.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.MMS.AR.Cliente.Informes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.MMS.AR.Cliente.Informes.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.MMS.AR.Comun, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.MMS.AR.Comun.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.MMS.AR.Server.BusinessEntity.Ordenes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.MMS.AR.Server.BusinessEntity.Ordenes.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.MMS.Cliente.Comun, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.MMS.Cliente.Comun.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.MMS.Cliente.OperacionesNegocio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.MMS.Cliente.OperacionesNegocio.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.MMS.Core.Server.BusinessEntity.Ordenes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.MMS.Core.Server.BusinessEntity.Ordenes.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.MMS.Core.Server.BusinessEntity.Seguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.MMS.Core.Server.BusinessEntity.Seguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="HM.Recursos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\REFERENCIAS\HM.Recursos.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataMapper\Envio_Ligero_MMS.cs" />
+    <Compile Include="DataMapper\OrdenExtDataMapper.cs" />
+    <Compile Include="DataMapper\OrdenIntDataMapper.cs" />
+    <Compile Include="DataMapper\OrdenProDataMapper.cs" />
+    <Compile Include="DataMapper\OrdenRadioDataMapper.cs" />
+    <Compile Include="DataMapper\OrdenRevistaDataMapper.cs" />
+    <Compile Include="Manager\OrdenExtManager.cs" />
+    <Compile Include="Manager\OrdenIntManager.cs" />
+    <Compile Include="Manager\OrdenProManager.cs" />
+    <Compile Include="Manager\OrdenRadioManager.cs" />
+    <Compile Include="Manager\OrdenRevistaManager.cs" />
+    <Compile Include="Manager\OrdenTvManager.cs" />
+    <Compile Include="Manager\OrdenPrensaManager.cs" />
+    <Compile Include="DataMapper\OrdenPrensaDataMapper.cs" />
+    <Compile Include="DataMapper\OrdenTvDataMapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ServicioOrdenTVCliente\Reference.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioOrdenTVCliente\Arrays.xsd" />
+    <None Include="Service References\ServicioOrdenTVCliente\BC.xsd" />
+    <None Include="Service References\ServicioOrdenTVCliente\C.xsd" />
+    <None Include="Service References\ServicioOrdenTVCliente\HM.Comun.SolutionEntityFramework.Common.xsd" />
+    <None Include="Service References\ServicioOrdenTVCliente\HM.MMS.AR.Server.BusinessEntity.Ordenes.Television.xsd" />
+    <None Include="Service References\ServicioOrdenTVCliente\HM.MMS.AR.Server.BusinessEntity.Ordenes.xsd" />
+    <None Include="Service References\ServicioOrdenTVCliente\HM.MMS.AR.Server.Service.xsd" />
+    <None Include="Service References\ServicioOrdenTVCliente\HM.MMS.Core.Server.BusinessEntity.Ordenes.RD.xsd" />
+    <None Include="Service References\ServicioOrdenTVCliente\S.xsd" />
+    <None Include="Service References\ServicioOrdenTVCliente\SEF.xsd" />
+    <None Include="Service References\ServicioOrdenTVCliente\service.wsdl" />
+    <None Include="Service References\ServicioOrdenTVCliente\service.xsd" />
+    <None Include="Service References\ServicioOrdenTVCliente\service1.xsd" />
+    <None Include="Service References\ServicioOrdenTVCliente\TV.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Service References\ServicioOrdenTVCliente\configuration.svcinfo" />
+    <Content Include="Service References\ServicioOrdenTVCliente\configuration91.svcinfo" />
+    <Content Include="Service References\ServicioOrdenTVCliente\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.vbproj">
+      <Project>{4358D9C5-B78C-4E91-9279-05CCE29EE9C8}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Framework.vbproj">
+      <Project>{35CF9F8E-7FDE-4889-A8DF-52825CCCEBD4}</Project>
+      <Name>Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Service References\ServicioOrdenPrensaCliente\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

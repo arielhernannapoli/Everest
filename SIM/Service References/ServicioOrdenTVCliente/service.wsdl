@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="GestionOrdenes" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="CustomBinding_IGestionOrdenes_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <gzip:GZipEncoding xmlns:gzip="http://schemas.microsoft.com/ws/06/2004/mspolicy/netgzip1" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/HM.MMS.Core.Server.BusinessEntity.Ordenes.RD" />
+      <xsd:import namespace="http://www.havas.com/C/SEF/BC" />
+      <xsd:import namespace="http://www.havas.com/MMS/C/S" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes.Television" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes" />
+      <xsd:import namespace="http://www.havas.com/MMS/C/O/TV" />
+      <xsd:import namespace="http://www.havas.com/C/SEF" />
+      <xsd:import namespace="http://www.havas.com/C/SEF/C" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/HM.Comun.SolutionEntityFramework.Common" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IGestionOrdenes_InsertarOrdenes_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarOrdenes" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_InsertarOrdenes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarOrdenesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_ObtenerOrden_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerOrden" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_ObtenerOrden_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerOrdenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_ActualizarOrdenCompleta_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarOrdenCompleta" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_ActualizarOrdenCompleta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarOrdenCompletaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_ActualizarOrden_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarOrden" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_ActualizarOrden_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarOrdenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_ActualizarOrdenes_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarOrdenes" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_ActualizarOrdenes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarOrdenesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_ObtenerOrdenesPorPresupuesto_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerOrdenesPorPresupuesto" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_ObtenerOrdenesPorPresupuesto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerOrdenesPorPresupuestoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_InsertarOrdenCompleta_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarOrdenCompleta" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_InsertarOrdenCompleta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarOrdenCompletaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_InsertarOrdenEverestCompleta_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarOrdenEverestCompleta" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_InsertarOrdenEverestCompleta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarOrdenEverestCompletaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_InsertarOrdenesCompletas_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarOrdenesCompletas" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_InsertarOrdenesCompletas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertarOrdenesCompletasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_ActualizarOrdenesCompletas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarOrdenesCompletas" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_ActualizarOrdenesCompletas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarOrdenesCompletasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_AnularOrdenes_InputMessage">
+    <wsdl:part name="parameters" element="tns:AnularOrdenes" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_AnularOrdenes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AnularOrdenesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_ActualizarEstados_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarEstados" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_ActualizarEstados_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarEstadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_CrearOrdenesPorRefacturacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearOrdenesPorRefacturacion" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_CrearOrdenesPorRefacturacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearOrdenesPorRefacturacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_AnularOrden_InputMessage">
+    <wsdl:part name="parameters" element="tns:AnularOrden" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_AnularOrden_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AnularOrdenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_ObtenerDescuentos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDescuentos" />
+  </wsdl:message>
+  <wsdl:message name="IGestionOrdenes_ObtenerDescuentos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDescuentosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IGestionOrdenes">
+    <wsdl:operation name="InsertarOrdenes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/InsertarOrdenes" message="tns:IGestionOrdenes_InsertarOrdenes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/InsertarOrdenesResponse" message="tns:IGestionOrdenes_InsertarOrdenes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerOrden">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ObtenerOrden" message="tns:IGestionOrdenes_ObtenerOrden_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ObtenerOrdenResponse" message="tns:IGestionOrdenes_ObtenerOrden_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarOrdenCompleta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ActualizarOrdenCompleta" message="tns:IGestionOrdenes_ActualizarOrdenCompleta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ActualizarOrdenCompletaResponse" message="tns:IGestionOrdenes_ActualizarOrdenCompleta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarOrden">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ActualizarOrden" message="tns:IGestionOrdenes_ActualizarOrden_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ActualizarOrdenResponse" message="tns:IGestionOrdenes_ActualizarOrden_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarOrdenes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ActualizarOrdenes" message="tns:IGestionOrdenes_ActualizarOrdenes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ActualizarOrdenesResponse" message="tns:IGestionOrdenes_ActualizarOrdenes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerOrdenesPorPresupuesto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ObtenerOrdenesPorPresupuesto" message="tns:IGestionOrdenes_ObtenerOrdenesPorPresupuesto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ObtenerOrdenesPorPresupuestoResponse" message="tns:IGestionOrdenes_ObtenerOrdenesPorPresupuesto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarOrdenCompleta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/InsertarOrdenCompleta" message="tns:IGestionOrdenes_InsertarOrdenCompleta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/InsertarOrdenCompletaResponse" message="tns:IGestionOrdenes_InsertarOrdenCompleta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarOrdenEverestCompleta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/InsertarOrdenEverestCompleta" message="tns:IGestionOrdenes_InsertarOrdenEverestCompleta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/InsertarOrdenEverestCompletaResponse" message="tns:IGestionOrdenes_InsertarOrdenEverestCompleta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarOrdenesCompletas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/InsertarOrdenesCompletas" message="tns:IGestionOrdenes_InsertarOrdenesCompletas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/InsertarOrdenesCompletasResponse" message="tns:IGestionOrdenes_InsertarOrdenesCompletas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarOrdenesCompletas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ActualizarOrdenesCompletas" message="tns:IGestionOrdenes_ActualizarOrdenesCompletas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ActualizarOrdenesCompletasResponse" message="tns:IGestionOrdenes_ActualizarOrdenesCompletas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AnularOrdenes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/AnularOrdenes" message="tns:IGestionOrdenes_AnularOrdenes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/AnularOrdenesResponse" message="tns:IGestionOrdenes_AnularOrdenes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarEstados">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ActualizarEstados" message="tns:IGestionOrdenes_ActualizarEstados_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ActualizarEstadosResponse" message="tns:IGestionOrdenes_ActualizarEstados_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearOrdenesPorRefacturacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/CrearOrdenesPorRefacturacion" message="tns:IGestionOrdenes_CrearOrdenesPorRefacturacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/CrearOrdenesPorRefacturacionResponse" message="tns:IGestionOrdenes_CrearOrdenesPorRefacturacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AnularOrden">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionOrdenes/AnularOrden" message="tns:IGestionOrdenes_AnularOrden_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionOrdenes/AnularOrdenResponse" message="tns:IGestionOrdenes_AnularOrden_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDescuentos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionOrdenes/ObtenerDescuentos" message="tns:IGestionOrdenes_ObtenerDescuentos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionOrdenes/ObtenerDescuentosResponse" message="tns:IGestionOrdenes_ObtenerDescuentos_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CustomBinding_IGestionOrdenes" type="tns:IGestionOrdenes">
+    <wsp:PolicyReference URI="#CustomBinding_IGestionOrdenes_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertarOrdenes">
+      <soap12:operation soapAction="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/InsertarOrdenes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerOrden">
+      <soap12:operation soapAction="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ObtenerOrden" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarOrdenCompleta">
+      <soap12:operation soapAction="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ActualizarOrdenCompleta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarOrden">
+      <soap12:operation soapAction="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ActualizarOrden" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarOrdenes">
+      <soap12:operation soapAction="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ActualizarOrdenes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerOrdenesPorPresupuesto">
+      <soap12:operation soapAction="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ObtenerOrdenesPorPresupuesto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarOrdenCompleta">
+      <soap12:operation soapAction="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/InsertarOrdenCompleta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarOrdenEverestCompleta">
+      <soap12:operation soapAction="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/InsertarOrdenEverestCompleta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarOrdenesCompletas">
+      <soap12:operation soapAction="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/InsertarOrdenesCompletas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarOrdenesCompletas">
+      <soap12:operation soapAction="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ActualizarOrdenesCompletas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnularOrdenes">
+      <soap12:operation soapAction="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/AnularOrdenes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarEstados">
+      <soap12:operation soapAction="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/ActualizarEstados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearOrdenesPorRefacturacion">
+      <soap12:operation soapAction="http://tempuri.org/IGestionOrdenesOf_OrdenTelevision/CrearOrdenesPorRefacturacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnularOrden">
+      <soap12:operation soapAction="http://tempuri.org/IGestionOrdenes/AnularOrden" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDescuentos">
+      <soap12:operation soapAction="http://tempuri.org/IGestionOrdenes/ObtenerDescuentos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GestionOrdenes">
+    <wsdl:port name="CustomBinding_IGestionOrdenes" binding="tns:CustomBinding_IGestionOrdenes">
+      <soap12:address location="http://hvmmmspre02:8040/MMS/HM.MMS.AR.Server.Service.Ordenes.Television.GestionOrdenes.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://hvmmmspre02:8040/MMS/HM.MMS.AR.Server.Service.Ordenes.Television.GestionOrdenes.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

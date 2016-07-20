@@ -1,0 +1,34 @@
+[2015/09/01 16:49:47] 
+
+NUEVA CONSULTA CON id 378699, USUARIO 2, TIPO 2
+
+[2015/09/01 16:49:47] Usuario válido
+[2015/09/01 16:49:47] Borra la audiencia de la tabla si existe
+******* Run time exception information begins ****
+When:  Tue Sep 01 16:49:47 2015
+Where: Error code -942 reported by function Compile of ora7_wfo called by vprepare 
+What:  ORA-00942: table or view does not exist
+
+Why:   ??
+Subsystem code:10004,Error code:-942
+SQL: SELECT reboses FROM PROPCONSULTA_EXT WHERE Id_consulta = [#1,<Not Bound>]
+******* Run time exception information ends  *****
+******* Run time exception information begins ****
+When:  Tue Sep 01 16:49:48 2015
+Where: safe_fopen
+What:  Error de apertura en fichero \sqso.
+Why:   no existe el fichero, path erróneo o no hay acceso al disco
+Subsystem code:0,Error code:49
+******* Run time exception information ends  *****
+******* Run time exception information begins ****
+When:  Tue Sep 01 16:49:48 2015
+Where: safe_fopen (Thread)
+What:  Error de apertura en fichero \sqso.
+Why:   no existe el fichero, path erróneo o no hay acceso al disco
+Subsystem code:0,Error code:49
+******* Run time exception information ends  *****
+[2015/09/01 16:49:48] Se ha producido el error: 
+Error de apertura en fichero \sqso.
+En:safe_fopen (Thread)
+Causa:no existe el fichero, path erróneo o no hay acceso al disco
+La operación no se ha completado.

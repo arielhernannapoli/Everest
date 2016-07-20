@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes.Television" />
+  <xs:import namespace="http://www.havas.com/MMS/C/O/TV" />
+  <xs:complexType name="ResultadoWSOfArrayOfKeyValueOfOrdenEverestNullableOfintm1Ct94vbuHEDJ7Dj">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultadoWSOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfKeyValueOf{0}{1}{#}" Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <GenericParameter Name="OrdenEverest" Namespace="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes" />
+            <GenericParameter Name="NullableOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/System">
+              <GenericParameter Name="int" Namespace="http://www.w3.org/2001/XMLSchema" />
+            </GenericParameter>
+          </GenericParameter>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultadoWS">
+        <xs:sequence>
+          <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Datos" nillable="true" type="q1:ArrayOfKeyValueOfOrdenEverestNullableOfintm1Ct94vb" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResultadoWSOfArrayOfKeyValueOfOrdenEverestNullableOfintm1Ct94vbuHEDJ7Dj" nillable="true" type="tns:ResultadoWSOfArrayOfKeyValueOfOrdenEverestNullableOfintm1Ct94vbuHEDJ7Dj" />
+  <xs:complexType name="ResultadoWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EsError" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MensajeError" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultadoWS" nillable="true" type="tns:ResultadoWS" />
+  <xs:complexType name="ResultadoWSOfOrdenTelevisionqHNdsGt_S">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultadoWSOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="OrdenTelevision" Namespace="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes.Television" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultadoWS">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes.Television" minOccurs="0" name="Datos" nillable="true" type="q2:OrdenTelevision" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResultadoWSOfOrdenTelevisionqHNdsGt_S" nillable="true" type="tns:ResultadoWSOfOrdenTelevisionqHNdsGt_S" />
+  <xs:complexType name="ResultadoWSOfArrayOfOrdenTelevisionqHNdsGt_S">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultadoWSOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfOrdenTelevision" Namespace="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes.Television" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultadoWS">
+        <xs:sequence>
+          <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes.Television" minOccurs="0" name="Datos" nillable="true" type="q3:ArrayOfOrdenTelevision" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResultadoWSOfArrayOfOrdenTelevisionqHNdsGt_S" nillable="true" type="tns:ResultadoWSOfArrayOfOrdenTelevisionqHNdsGt_S" />
+  <xs:complexType name="ResultadoWSOfArrayOfintuHEDJ7Dj">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultadoWSOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfint" Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultadoWS">
+        <xs:sequence>
+          <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Datos" nillable="true" type="q4:ArrayOfint" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResultadoWSOfArrayOfintuHEDJ7Dj" nillable="true" type="tns:ResultadoWSOfArrayOfintuHEDJ7Dj" />
+  <xs:complexType name="ResultadoWSOfArrayOfDRfiFXlTOR">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResultadoWSOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfDR" Namespace="http://www.havas.com/MMS/C/O/TV" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultadoWS">
+        <xs:sequence>
+          <xs:element xmlns:q5="http://www.havas.com/MMS/C/O/TV" minOccurs="0" name="Datos" nillable="true" type="q5:ArrayOfDR" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResultadoWSOfArrayOfDRfiFXlTOR" nillable="true" type="tns:ResultadoWSOfArrayOfDRfiFXlTOR" />
+</xs:schema>

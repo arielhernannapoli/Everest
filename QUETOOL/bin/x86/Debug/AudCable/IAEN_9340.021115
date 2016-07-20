@@ -1,0 +1,26 @@
+[2015/11/02 15:12:29] 
+
+NUEVA CONSULTA CON id 379725, USUARIO 2, TIPO 2
+
+[2015/11/02 15:12:29] Usuario válido
+[2015/11/02 15:12:29] Borra la audiencia de la tabla si existe
+******* Run time exception information begins ****
+When:  Mon Nov 02 15:12:30 2015
+Where: Error code -942 reported by function Compile of ora7_wfo called by vprepare 
+What:  ORA-00942: table or view does not exist
+
+Why:   ??
+Subsystem code:10004,Error code:-942
+SQL: SELECT reboses FROM PROPCONSULTA_EXT WHERE Id_consulta = [#1,<Not Bound>]
+******* Run time exception information ends  *****
+[2015/11/02 15:12:34] Número  de programas : 8
+[2015/11/02 15:12:34] Número de targets: 1
+[2015/11/02 15:12:35] Comienza la ejecución del motor ...
+[2015/11/02 15:12:35] Día 2456984, lee target del día...
+[2015/11/02 15:12:35] 	...y termina
+[2015/11/02 15:12:35] se sacan los tíos del target....
+[2015/11/02 15:12:35] 	...y se termina
+[2015/11/02 15:12:35] Emisiones2Audiencia...
+[2015/11/02 15:12:35] ...termina Emisiones2Audiencia
+[2015/11/02 15:12:35] Calculando audiencia. Entra en el motor.
+

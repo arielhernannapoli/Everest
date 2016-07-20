@@ -1,0 +1,27 @@
+[2006/04/05 17:52:26] 
+
+NUEVA CONSULTA CON id 88212, USUARIO 2, TIPO 2
+
+[2006/04/05 17:52:26] Usuario válido
+[2006/04/05 17:52:26] Borra la audiencia de la tabla si existe
+[2006/04/05 17:52:27] Número  de programas : 232
+[2006/04/05 17:52:27] Número de targets: 1
+******* Run time exception information begins ****
+When:  Wed Apr 05 17:52:27 2006
+Where: Analisis de audiencias
+What:  No se ha encontrado fichero de trabajo para alguno de los periodos
+Why:   periodos en Nautilus.ini no coinciden con periodos en consulta
+Subsystem code:0,Error code:3
+******* Run time exception information ends  *****
+******* Run time exception information begins ****
+When:  Wed Apr 05 17:52:27 2006
+Where: Analisis de audiencias (Thread)
+What:  No se ha encontrado fichero de trabajo para alguno de los periodos
+Why:   periodos en Nautilus.ini no coinciden con periodos en consulta
+Subsystem code:0,Error code:3
+******* Run time exception information ends  *****
+[2006/04/05 17:52:27] Se ha producido el error: 
+No se ha encontrado fichero de trabajo para alguno de los periodos
+En:Analisis de audiencias (Thread)
+Causa:periodos en Nautilus.ini no coinciden con periodos en consulta
+La operación no se ha completado.

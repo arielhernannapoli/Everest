@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="SpotsLog" elementFormDefault="qualified" attributeFormDefault="unqualified"
+	xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="SpotsLog" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Spots_Log" nillable="true">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID_SPOTS_LOG" type="xs:int" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="ID_SPOT" type="xs:int" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="ID_CAMPANIA" type="xs:int" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="DESC_CAMPANIA" type="xs:string" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="ID_SISTEMA" type="xs:int" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="DESC_SISTEMA" type="xs:string" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="ID_EJERCICIO" type="xs:int" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="DESC_EJERCICIO" type="xs:string" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="CADENA" type="xs:string" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="HORA" type="xs:string" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="PROGRAMA" type="xs:string" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="TARIFABRUTA" type="xs:double" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="D1" type="xs:double" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="D2" type="xs:double" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="D3" type="xs:double" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="D4" type="xs:double" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="D5" type="xs:double" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="TARIFANETA" type="xs:double" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="RATINGPROGRAMA" type="xs:double" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="RATINGTANDA" type="xs:double" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="TIPO_RATING" type="xs:string" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="ACCION" type="xs:string" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="U_ACCION" type="xs:string" minOccurs="0" nillable="true" msdata:ReadOnly="false" />
+							<xs:element name="F_ACCION" type="xs:dateTime" minOccurs="0" msdata:ReadOnly="false" nillable="true" />
+							<xs:element name="PROGRAMA_MODIFICADO" type="xs:boolean" minOccurs="0" />
+							<xs:element name="TARIFABRUTA_MODIFICADO" type="xs:boolean" minOccurs="0" />
+							<xs:element name="D1_MODIFICADO" type="xs:boolean" minOccurs="0" />
+							<xs:element name="D2_MODIFICADO" type="xs:boolean" minOccurs="0" />
+							<xs:element name="D3_MODIFICADO" type="xs:boolean" minOccurs="0" />
+							<xs:element name="D4_MODIFICADO" type="xs:boolean" minOccurs="0" />
+							<xs:element name="D5_MODIFICADO" type="xs:boolean" minOccurs="0" />
+							<xs:element name="TARIFANETA_MODIFICADO" type="xs:boolean" minOccurs="0" />
+							<xs:element name="RATING_MODIFICADO" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Spots_Detalle_Log" nillable="true">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID_SPOTS_LOG" type="xs:int" minOccurs="0" nillable="true" msdata:ReadOnly="false" />
+							<xs:element name="ID_SPOT" type="xs:int" minOccurs="0" nillable="true" msdata:ReadOnly="false" />
+							<xs:element name="ID_SPOT_DETALLE" type="xs:int" minOccurs="0" nillable="true" msdata:ReadOnly="false" />
+							<xs:element name="F_SPOT" type="xs:dateTime" minOccurs="0" nillable="true" msdata:ReadOnly="false" />
+							<xs:element name="ID_TEMA" type="xs:string" minOccurs="0" nillable="true" msdata:ReadOnly="false" />
+							<xs:element name="DURACION" type="xs:int" minOccurs="0" nillable="true" msdata:ReadOnly="false" />
+							<xs:element name="ACCION" type="xs:string" minOccurs="0" nillable="true" msdata:ReadOnly="false" />
+							<xs:element name="F_ACCION" type="xs:dateTime" minOccurs="0" nillable="true" msdata:ReadOnly="false" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Cabecera">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CAMPANIA" type="xs:string" minOccurs="0" />
+							<xs:element name="SISTEMA" type="xs:string" minOccurs="0" />
+							<xs:element name="EJERCICIO" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="SpotsLogKey1">
+			<xs:selector xpath=".//Spots_Log" />
+			<xs:field xpath="ID_SPOTS_LOG" />
+		</xs:key>
+		<xs:key name="SpotsLogKey2">
+			<xs:selector xpath=".//Spots_Log" />
+			<xs:field xpath="ID_SPOTS_LOG" />
+		</xs:key>
+		<xs:keyref name="Spots_LogSpots_Detalle_Log" refer="SpotsLogKey1">
+			<xs:selector xpath=".//Spots_Detalle_Log" />
+			<xs:field xpath="ID_SPOTS_LOG" />
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,498 @@
+[2015/10/16 14:41:40] 
+
+NUEVA CONSULTA CON id 379294, USUARIO 2, TIPO 2
+
+[2015/10/16 14:41:40] Usuario válido
+[2015/10/16 14:41:40] Borra la audiencia de la tabla si existe
+******* Run time exception information begins ****
+When:  Fri Oct 16 14:41:40 2015
+Where: Error code -942 reported by function Compile of ora7_wfo called by vprepare 
+What:  ORA-00942: table or view does not exist
+
+Why:   ??
+Subsystem code:10004,Error code:-942
+SQL: SELECT reboses FROM PROPCONSULTA_EXT WHERE Id_consulta = [#1,<Not Bound>]
+******* Run time exception information ends  *****
+[2015/10/16 14:41:49] Número  de programas : 336
+[2015/10/16 14:41:49] Número de targets: 1
+[2015/10/16 14:41:49] Comienza la ejecución del motor ...
+[2015/10/16 14:41:49] Día 2457154, lee target del día...
+[2015/10/16 14:41:49] 	...y termina
+[2015/10/16 14:41:49] se sacan los tíos del target....
+[2015/10/16 14:41:49] 	...y se termina
+[2015/10/16 14:41:49] Emisiones2Audiencia...
+[2015/10/16 14:41:49] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:49] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:49] 	Proceso ...
+[2015/10/16 14:41:49] 	Entro en target 0  con 855 seleccionados
+[2015/10/16 14:41:49] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:49] Entra en funcion de ordenacion
+[2015/10/16 14:41:49] Sale de funcion de ordenacion
+[2015/10/16 14:41:49]  Entra en bucle por individuo
+[2015/10/16 14:41:49] Sale de bucle por individuo
+[2015/10/16 14:41:49] Calcula el TTV
+[2015/10/16 14:41:49] Termina con el TTV
+[2015/10/16 14:41:49] Libera estructuras
+[2015/10/16 14:41:49] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:49] inserción de 12 filas...
+[2015/10/16 14:41:49] Final del proceso para un dia
+
+[2015/10/16 14:41:49] Día 2457155, lee target del día...
+[2015/10/16 14:41:49] 	...y termina
+[2015/10/16 14:41:49] se sacan los tíos del target....
+[2015/10/16 14:41:49] 	...y se termina
+[2015/10/16 14:41:49] Emisiones2Audiencia...
+[2015/10/16 14:41:49] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:49] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:49] 	Proceso ...
+[2015/10/16 14:41:49] 	Entro en target 0  con 855 seleccionados
+[2015/10/16 14:41:49] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:49] Entra en funcion de ordenacion
+[2015/10/16 14:41:49] Sale de funcion de ordenacion
+[2015/10/16 14:41:49]  Entra en bucle por individuo
+[2015/10/16 14:41:49] Sale de bucle por individuo
+[2015/10/16 14:41:49] Calcula el TTV
+[2015/10/16 14:41:49] Termina con el TTV
+[2015/10/16 14:41:49] Libera estructuras
+[2015/10/16 14:41:49] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:49] inserción de 12 filas...
+[2015/10/16 14:41:49] Final del proceso para un dia
+
+[2015/10/16 14:41:49] Día 2457156, lee target del día...
+[2015/10/16 14:41:49] 	...y termina
+[2015/10/16 14:41:49] se sacan los tíos del target....
+[2015/10/16 14:41:49] 	...y se termina
+[2015/10/16 14:41:49] Emisiones2Audiencia...
+[2015/10/16 14:41:49] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:49] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:49] 	Proceso ...
+[2015/10/16 14:41:49] 	Entro en target 0  con 855 seleccionados
+[2015/10/16 14:41:49] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:49] Entra en funcion de ordenacion
+[2015/10/16 14:41:49] Sale de funcion de ordenacion
+[2015/10/16 14:41:49]  Entra en bucle por individuo
+[2015/10/16 14:41:49] Sale de bucle por individuo
+[2015/10/16 14:41:49] Calcula el TTV
+[2015/10/16 14:41:49] Termina con el TTV
+[2015/10/16 14:41:49] Libera estructuras
+[2015/10/16 14:41:50] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:50] inserción de 12 filas...
+[2015/10/16 14:41:50] Final del proceso para un dia
+
+[2015/10/16 14:41:50] Día 2457157, lee target del día...
+[2015/10/16 14:41:50] 	...y termina
+[2015/10/16 14:41:50] se sacan los tíos del target....
+[2015/10/16 14:41:50] 	...y se termina
+[2015/10/16 14:41:50] Emisiones2Audiencia...
+[2015/10/16 14:41:50] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:50] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:50] 	Proceso ...
+[2015/10/16 14:41:50] 	Entro en target 0  con 842 seleccionados
+[2015/10/16 14:41:50] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:50] Entra en funcion de ordenacion
+[2015/10/16 14:41:50] Sale de funcion de ordenacion
+[2015/10/16 14:41:50]  Entra en bucle por individuo
+[2015/10/16 14:41:50] Sale de bucle por individuo
+[2015/10/16 14:41:50] Calcula el TTV
+[2015/10/16 14:41:50] Termina con el TTV
+[2015/10/16 14:41:50] Libera estructuras
+[2015/10/16 14:41:50] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:50] inserción de 12 filas...
+[2015/10/16 14:41:50] Final del proceso para un dia
+
+[2015/10/16 14:41:50] Día 2457158, lee target del día...
+[2015/10/16 14:41:50] 	...y termina
+[2015/10/16 14:41:50] se sacan los tíos del target....
+[2015/10/16 14:41:50] 	...y se termina
+[2015/10/16 14:41:50] Emisiones2Audiencia...
+[2015/10/16 14:41:50] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:50] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:50] 	Proceso ...
+[2015/10/16 14:41:50] 	Entro en target 0  con 846 seleccionados
+[2015/10/16 14:41:50] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:50] Entra en funcion de ordenacion
+[2015/10/16 14:41:50] Sale de funcion de ordenacion
+[2015/10/16 14:41:50]  Entra en bucle por individuo
+[2015/10/16 14:41:50] Sale de bucle por individuo
+[2015/10/16 14:41:50] Calcula el TTV
+[2015/10/16 14:41:50] Termina con el TTV
+[2015/10/16 14:41:50] Libera estructuras
+[2015/10/16 14:41:50] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:50] inserción de 12 filas...
+[2015/10/16 14:41:50] Final del proceso para un dia
+
+[2015/10/16 14:41:50] Día 2457159, lee target del día...
+[2015/10/16 14:41:50] 	...y termina
+[2015/10/16 14:41:50] se sacan los tíos del target....
+[2015/10/16 14:41:50] 	...y se termina
+[2015/10/16 14:41:50] Emisiones2Audiencia...
+[2015/10/16 14:41:50] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:50] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:50] 	Proceso ...
+[2015/10/16 14:41:50] 	Entro en target 0  con 851 seleccionados
+[2015/10/16 14:41:50] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:50] Entra en funcion de ordenacion
+[2015/10/16 14:41:50] Sale de funcion de ordenacion
+[2015/10/16 14:41:50]  Entra en bucle por individuo
+[2015/10/16 14:41:50] Sale de bucle por individuo
+[2015/10/16 14:41:50] Calcula el TTV
+[2015/10/16 14:41:50] Termina con el TTV
+[2015/10/16 14:41:50] Libera estructuras
+[2015/10/16 14:41:50] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:50] inserción de 12 filas...
+[2015/10/16 14:41:50] Final del proceso para un dia
+
+[2015/10/16 14:41:50] Día 2457160, lee target del día...
+[2015/10/16 14:41:50] 	...y termina
+[2015/10/16 14:41:50] se sacan los tíos del target....
+[2015/10/16 14:41:50] 	...y se termina
+[2015/10/16 14:41:50] Emisiones2Audiencia...
+[2015/10/16 14:41:50] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:50] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:50] 	Proceso ...
+[2015/10/16 14:41:50] 	Entro en target 0  con 845 seleccionados
+[2015/10/16 14:41:50] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:50] Entra en funcion de ordenacion
+[2015/10/16 14:41:50] Sale de funcion de ordenacion
+[2015/10/16 14:41:50]  Entra en bucle por individuo
+[2015/10/16 14:41:50] Sale de bucle por individuo
+[2015/10/16 14:41:50] Calcula el TTV
+[2015/10/16 14:41:50] Termina con el TTV
+[2015/10/16 14:41:50] Libera estructuras
+[2015/10/16 14:41:50] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:50] inserción de 12 filas...
+[2015/10/16 14:41:50] Final del proceso para un dia
+
+[2015/10/16 14:41:50] Día 2457161, lee target del día...
+[2015/10/16 14:41:50] 	...y termina
+[2015/10/16 14:41:50] se sacan los tíos del target....
+[2015/10/16 14:41:50] 	...y se termina
+[2015/10/16 14:41:50] Emisiones2Audiencia...
+[2015/10/16 14:41:50] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:50] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:50] 	Proceso ...
+[2015/10/16 14:41:50] 	Entro en target 0  con 854 seleccionados
+[2015/10/16 14:41:50] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:50] Entra en funcion de ordenacion
+[2015/10/16 14:41:50] Sale de funcion de ordenacion
+[2015/10/16 14:41:50]  Entra en bucle por individuo
+[2015/10/16 14:41:50] Sale de bucle por individuo
+[2015/10/16 14:41:50] Calcula el TTV
+[2015/10/16 14:41:50] Termina con el TTV
+[2015/10/16 14:41:50] Libera estructuras
+[2015/10/16 14:41:50] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:50] inserción de 12 filas...
+[2015/10/16 14:41:50] Final del proceso para un dia
+
+[2015/10/16 14:41:50] Día 2457162, lee target del día...
+[2015/10/16 14:41:50] 	...y termina
+[2015/10/16 14:41:50] se sacan los tíos del target....
+[2015/10/16 14:41:50] 	...y se termina
+[2015/10/16 14:41:50] Emisiones2Audiencia...
+[2015/10/16 14:41:50] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:50] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:50] 	Proceso ...
+[2015/10/16 14:41:50] 	Entro en target 0  con 853 seleccionados
+[2015/10/16 14:41:50] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:50] Entra en funcion de ordenacion
+[2015/10/16 14:41:50] Sale de funcion de ordenacion
+[2015/10/16 14:41:50]  Entra en bucle por individuo
+[2015/10/16 14:41:50] Sale de bucle por individuo
+[2015/10/16 14:41:50] Calcula el TTV
+[2015/10/16 14:41:50] Termina con el TTV
+[2015/10/16 14:41:50] Libera estructuras
+[2015/10/16 14:41:50] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:50] inserción de 12 filas...
+[2015/10/16 14:41:50] Final del proceso para un dia
+
+[2015/10/16 14:41:50] Día 2457163, lee target del día...
+[2015/10/16 14:41:50] 	...y termina
+[2015/10/16 14:41:50] se sacan los tíos del target....
+[2015/10/16 14:41:50] 	...y se termina
+[2015/10/16 14:41:50] Emisiones2Audiencia...
+[2015/10/16 14:41:50] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:50] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:50] 	Proceso ...
+[2015/10/16 14:41:50] 	Entro en target 0  con 857 seleccionados
+[2015/10/16 14:41:50] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:50] Entra en funcion de ordenacion
+[2015/10/16 14:41:50] Sale de funcion de ordenacion
+[2015/10/16 14:41:50]  Entra en bucle por individuo
+[2015/10/16 14:41:50] Sale de bucle por individuo
+[2015/10/16 14:41:50] Calcula el TTV
+[2015/10/16 14:41:50] Termina con el TTV
+[2015/10/16 14:41:50] Libera estructuras
+[2015/10/16 14:41:50] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:50] inserción de 12 filas...
+[2015/10/16 14:41:50] Final del proceso para un dia
+
+[2015/10/16 14:41:50] Día 2457164, lee target del día...
+[2015/10/16 14:41:50] 	...y termina
+[2015/10/16 14:41:50] se sacan los tíos del target....
+[2015/10/16 14:41:50] 	...y se termina
+[2015/10/16 14:41:50] Emisiones2Audiencia...
+[2015/10/16 14:41:50] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:50] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:50] 	Proceso ...
+[2015/10/16 14:41:50] 	Entro en target 0  con 861 seleccionados
+[2015/10/16 14:41:50] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:50] Entra en funcion de ordenacion
+[2015/10/16 14:41:50] Sale de funcion de ordenacion
+[2015/10/16 14:41:50]  Entra en bucle por individuo
+[2015/10/16 14:41:50] Sale de bucle por individuo
+[2015/10/16 14:41:50] Calcula el TTV
+[2015/10/16 14:41:50] Termina con el TTV
+[2015/10/16 14:41:50] Libera estructuras
+[2015/10/16 14:41:50] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:50] inserción de 12 filas...
+[2015/10/16 14:41:50] Final del proceso para un dia
+
+[2015/10/16 14:41:50] Día 2457165, lee target del día...
+[2015/10/16 14:41:50] 	...y termina
+[2015/10/16 14:41:50] se sacan los tíos del target....
+[2015/10/16 14:41:50] 	...y se termina
+[2015/10/16 14:41:50] Emisiones2Audiencia...
+[2015/10/16 14:41:50] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:50] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:50] 	Proceso ...
+[2015/10/16 14:41:50] 	Entro en target 0  con 864 seleccionados
+[2015/10/16 14:41:50] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:50] Entra en funcion de ordenacion
+[2015/10/16 14:41:50] Sale de funcion de ordenacion
+[2015/10/16 14:41:50]  Entra en bucle por individuo
+[2015/10/16 14:41:50] Sale de bucle por individuo
+[2015/10/16 14:41:50] Calcula el TTV
+[2015/10/16 14:41:50] Termina con el TTV
+[2015/10/16 14:41:50] Libera estructuras
+[2015/10/16 14:41:51] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:51] inserción de 12 filas...
+[2015/10/16 14:41:51] Final del proceso para un dia
+
+[2015/10/16 14:41:51] Día 2457166, lee target del día...
+[2015/10/16 14:41:51] 	...y termina
+[2015/10/16 14:41:51] se sacan los tíos del target....
+[2015/10/16 14:41:51] 	...y se termina
+[2015/10/16 14:41:51] Emisiones2Audiencia...
+[2015/10/16 14:41:51] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:51] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:51] 	Proceso ...
+[2015/10/16 14:41:51] 	Entro en target 0  con 835 seleccionados
+[2015/10/16 14:41:51] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:51] Entra en funcion de ordenacion
+[2015/10/16 14:41:51] Sale de funcion de ordenacion
+[2015/10/16 14:41:51]  Entra en bucle por individuo
+[2015/10/16 14:41:51] Sale de bucle por individuo
+[2015/10/16 14:41:51] Calcula el TTV
+[2015/10/16 14:41:51] Termina con el TTV
+[2015/10/16 14:41:51] Libera estructuras
+[2015/10/16 14:41:51] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:51] inserción de 12 filas...
+[2015/10/16 14:41:51] Final del proceso para un dia
+
+[2015/10/16 14:41:51] Día 2457167, lee target del día...
+[2015/10/16 14:41:51] 	...y termina
+[2015/10/16 14:41:51] se sacan los tíos del target....
+[2015/10/16 14:41:51] 	...y se termina
+[2015/10/16 14:41:51] Emisiones2Audiencia...
+[2015/10/16 14:41:51] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:51] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:51] 	Proceso ...
+[2015/10/16 14:41:51] 	Entro en target 0  con 848 seleccionados
+[2015/10/16 14:41:51] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:51] Entra en funcion de ordenacion
+[2015/10/16 14:41:51] Sale de funcion de ordenacion
+[2015/10/16 14:41:51]  Entra en bucle por individuo
+[2015/10/16 14:41:51] Sale de bucle por individuo
+[2015/10/16 14:41:51] Calcula el TTV
+[2015/10/16 14:41:51] Termina con el TTV
+[2015/10/16 14:41:51] Libera estructuras
+[2015/10/16 14:41:51] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:51] inserción de 12 filas...
+[2015/10/16 14:41:51] Final del proceso para un dia
+
+[2015/10/16 14:41:51] Día 2457168, lee target del día...
+[2015/10/16 14:41:51] 	...y termina
+[2015/10/16 14:41:51] se sacan los tíos del target....
+[2015/10/16 14:41:51] 	...y se termina
+[2015/10/16 14:41:51] Emisiones2Audiencia...
+[2015/10/16 14:41:51] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:51] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:51] 	Proceso ...
+[2015/10/16 14:41:51] 	Entro en target 0  con 852 seleccionados
+[2015/10/16 14:41:51] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:51] Entra en funcion de ordenacion
+[2015/10/16 14:41:51] Sale de funcion de ordenacion
+[2015/10/16 14:41:51]  Entra en bucle por individuo
+[2015/10/16 14:41:51] Sale de bucle por individuo
+[2015/10/16 14:41:51] Calcula el TTV
+[2015/10/16 14:41:51] Termina con el TTV
+[2015/10/16 14:41:51] Libera estructuras
+[2015/10/16 14:41:51] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:51] inserción de 12 filas...
+[2015/10/16 14:41:51] Final del proceso para un dia
+
+[2015/10/16 14:41:51] Día 2457169, lee target del día...
+[2015/10/16 14:41:51] 	...y termina
+[2015/10/16 14:41:51] se sacan los tíos del target....
+[2015/10/16 14:41:51] 	...y se termina
+[2015/10/16 14:41:51] Emisiones2Audiencia...
+[2015/10/16 14:41:51] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:51] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:51] 	Proceso ...
+[2015/10/16 14:41:51] 	Entro en target 0  con 844 seleccionados
+[2015/10/16 14:41:51] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:51] Entra en funcion de ordenacion
+[2015/10/16 14:41:51] Sale de funcion de ordenacion
+[2015/10/16 14:41:51]  Entra en bucle por individuo
+[2015/10/16 14:41:51] Sale de bucle por individuo
+[2015/10/16 14:41:51] Calcula el TTV
+[2015/10/16 14:41:51] Termina con el TTV
+[2015/10/16 14:41:51] Libera estructuras
+[2015/10/16 14:41:51] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:51] inserción de 12 filas...
+[2015/10/16 14:41:51] Final del proceso para un dia
+
+[2015/10/16 14:41:51] Día 2457170, lee target del día...
+[2015/10/16 14:41:51] 	...y termina
+[2015/10/16 14:41:51] se sacan los tíos del target....
+[2015/10/16 14:41:51] 	...y se termina
+[2015/10/16 14:41:51] Emisiones2Audiencia...
+[2015/10/16 14:41:51] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:51] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:51] 	Proceso ...
+[2015/10/16 14:41:51] 	Entro en target 0  con 860 seleccionados
+[2015/10/16 14:41:51] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:51] Entra en funcion de ordenacion
+[2015/10/16 14:41:51] Sale de funcion de ordenacion
+[2015/10/16 14:41:51]  Entra en bucle por individuo
+[2015/10/16 14:41:51] Sale de bucle por individuo
+[2015/10/16 14:41:51] Calcula el TTV
+[2015/10/16 14:41:51] Termina con el TTV
+[2015/10/16 14:41:51] Libera estructuras
+[2015/10/16 14:41:51] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:51] inserción de 12 filas...
+[2015/10/16 14:41:51] Final del proceso para un dia
+
+[2015/10/16 14:41:51] Día 2457171, lee target del día...
+[2015/10/16 14:41:51] 	...y termina
+[2015/10/16 14:41:51] se sacan los tíos del target....
+[2015/10/16 14:41:51] 	...y se termina
+[2015/10/16 14:41:51] Emisiones2Audiencia...
+[2015/10/16 14:41:51] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:51] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:51] 	Proceso ...
+[2015/10/16 14:41:51] 	Entro en target 0  con 864 seleccionados
+[2015/10/16 14:41:51] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:51] Entra en funcion de ordenacion
+[2015/10/16 14:41:51] Sale de funcion de ordenacion
+[2015/10/16 14:41:51]  Entra en bucle por individuo
+[2015/10/16 14:41:51] Sale de bucle por individuo
+[2015/10/16 14:41:51] Calcula el TTV
+[2015/10/16 14:41:51] Termina con el TTV
+[2015/10/16 14:41:51] Libera estructuras
+[2015/10/16 14:41:51] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:51] inserción de 12 filas...
+[2015/10/16 14:41:51] Final del proceso para un dia
+
+[2015/10/16 14:41:51] Día 2457172, lee target del día...
+[2015/10/16 14:41:51] 	...y termina
+[2015/10/16 14:41:51] se sacan los tíos del target....
+[2015/10/16 14:41:51] 	...y se termina
+[2015/10/16 14:41:51] Emisiones2Audiencia...
+[2015/10/16 14:41:51] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:51] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:51] 	Proceso ...
+[2015/10/16 14:41:51] 	Entro en target 0  con 861 seleccionados
+[2015/10/16 14:41:51] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:51] Entra en funcion de ordenacion
+[2015/10/16 14:41:51] Sale de funcion de ordenacion
+[2015/10/16 14:41:51]  Entra en bucle por individuo
+[2015/10/16 14:41:51] Sale de bucle por individuo
+[2015/10/16 14:41:51] Calcula el TTV
+[2015/10/16 14:41:51] Termina con el TTV
+[2015/10/16 14:41:51] Libera estructuras
+[2015/10/16 14:41:51] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:51] inserción de 12 filas...
+[2015/10/16 14:41:51] Final del proceso para un dia
+
+[2015/10/16 14:41:51] Día 2457173, lee target del día...
+[2015/10/16 14:41:51] 	...y termina
+[2015/10/16 14:41:51] se sacan los tíos del target....
+[2015/10/16 14:41:51] 	...y se termina
+[2015/10/16 14:41:51] Emisiones2Audiencia...
+[2015/10/16 14:41:51] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:51] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:51] 	Proceso ...
+[2015/10/16 14:41:51] 	Entro en target 0  con 832 seleccionados
+[2015/10/16 14:41:51] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:51] Entra en funcion de ordenacion
+[2015/10/16 14:41:51] Sale de funcion de ordenacion
+[2015/10/16 14:41:51]  Entra en bucle por individuo
+[2015/10/16 14:41:51] Sale de bucle por individuo
+[2015/10/16 14:41:51] Calcula el TTV
+[2015/10/16 14:41:51] Termina con el TTV
+[2015/10/16 14:41:51] Libera estructuras
+[2015/10/16 14:41:51] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:51] inserción de 12 filas...
+[2015/10/16 14:41:51] Final del proceso para un dia
+
+[2015/10/16 14:41:51] Día 2457174, lee target del día...
+[2015/10/16 14:41:51] 	...y termina
+[2015/10/16 14:41:51] se sacan los tíos del target....
+[2015/10/16 14:41:51] 	...y se termina
+[2015/10/16 14:41:51] Emisiones2Audiencia...
+[2015/10/16 14:41:51] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:51] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:51] 	Proceso ...
+[2015/10/16 14:41:51] 	Entro en target 0  con 841 seleccionados
+[2015/10/16 14:41:51] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:51] Entra en funcion de ordenacion
+[2015/10/16 14:41:51] Sale de funcion de ordenacion
+[2015/10/16 14:41:51]  Entra en bucle por individuo
+[2015/10/16 14:41:51] Sale de bucle por individuo
+[2015/10/16 14:41:51] Calcula el TTV
+[2015/10/16 14:41:51] Termina con el TTV
+[2015/10/16 14:41:51] Libera estructuras
+[2015/10/16 14:41:51] Leidos 6 programas. Empieza a asignar audiencias
+[2015/10/16 14:41:51] inserción de 12 filas...
+[2015/10/16 14:41:51] Final del proceso para un dia
+
+[2015/10/16 14:41:51] Día 2457175, lee target del día...
+[2015/10/16 14:41:51] 	...y termina
+[2015/10/16 14:41:51] se sacan los tíos del target....
+[2015/10/16 14:41:51] 	...y se termina
+[2015/10/16 14:41:51] Emisiones2Audiencia...
+[2015/10/16 14:41:51] ...termina Emisiones2Audiencia
+[2015/10/16 14:41:51] Calculando audiencia. Entra en el motor.
+
+[2015/10/16 14:41:51] 	Proceso ...
+[2015/10/16 14:41:51] 	Entro en target 0  con 847 seleccionados
+[2015/10/16 14:41:51] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/16 14:41:51] Entra en funcion de ordenacion
+[2015/10/16 14:41:51] Sale de funcion de ordenacion
+[2015/10/16 14:41:51]  Entra en bucle por individuo
+[2015/10/16 14:41:51] Sale de bucle por individuo
+[2015/10/16 14:41:51] Calcula el TTV
+[2015/10/16 14:41:51] Termina con el TTV
+[2015/10/16 14:41:51] Libera estructuras

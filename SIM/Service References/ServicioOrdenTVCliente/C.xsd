@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.havas.com/C/SEF/C" elementFormDefault="qualified" targetNamespace="http://www.havas.com/C/SEF/C" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/HM.Comun.SolutionEntityFramework.Common" />
+  <xs:complexType name="A">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CD" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UD" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UU" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="A" nillable="true" type="tns:A" />
+  <xs:complexType name="S">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/HM.Comun.SolutionEntityFramework.Common" minOccurs="0" name="SI" type="q1:SolutionEntityStatus" />
+      <xs:element minOccurs="0" name="TS" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="S" nillable="true" type="tns:S" />
+</xs:schema>

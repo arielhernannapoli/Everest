@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.havas.com/C/SEF" elementFormDefault="qualified" targetNamespace="http://www.havas.com/C/SEF" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://www.havas.com/C/SEF/C" />
+  <xs:import namespace="http://www.havas.com/C/SEF/BC" />
+  <xs:complexType name="ArrayOfSE">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SE" nillable="true" type="tns:SE" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSE" nillable="true" type="tns:ArrayOfSE" />
+  <xs:complexType name="SE">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://www.havas.com/C/SEF/C" minOccurs="0" name="A" nillable="true" type="q1:A" />
+      <xs:element xmlns:q2="http://www.havas.com/C/SEF/BC" minOccurs="0" name="BE" nillable="true" type="q2:BSE" />
+      <xs:element xmlns:q3="http://www.havas.com/C/SEF/C" minOccurs="0" name="S" nillable="true" type="q3:S" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SE" nillable="true" type="tns:SE" />
+</xs:schema>

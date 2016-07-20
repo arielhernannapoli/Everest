@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/HM.Comun.SolutionEntityFramework.Common" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/HM.Comun.SolutionEntityFramework.Common" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="SolutionEntityStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NewBusinessEntity" />
+      <xs:enumeration value="UpdatedNewBusinessEntity" />
+      <xs:enumeration value="LoadedBusinessEntity" />
+      <xs:enumeration value="UpdatedLoadedBusinessEntity" />
+      <xs:enumeration value="RemovedLoadedBusinessEntity" />
+      <xs:enumeration value="SavedOKNewBusinessEntity" />
+      <xs:enumeration value="SavedERRORNewBusinessEntity" />
+      <xs:enumeration value="SavedOKUpdatedNewBusinessEntity" />
+      <xs:enumeration value="SavedErrorUpdatedNewBusinessEntity" />
+      <xs:enumeration value="SavedOKLoadedBusinessEntity" />
+      <xs:enumeration value="SavedErrorLoadedBusinessEntity" />
+      <xs:enumeration value="SavedOKUpdatedLoadedBusinessEntity" />
+      <xs:enumeration value="SavedErrorUpdatedLoadedBusinessEntity" />
+      <xs:enumeration value="SavedOKRemovedLoadedBusinessEntity" />
+      <xs:enumeration value="SavedErrorRemovedLoadedBusinessEntity" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SolutionEntityStatus" nillable="true" type="tns:SolutionEntityStatus" />
+</xs:schema>

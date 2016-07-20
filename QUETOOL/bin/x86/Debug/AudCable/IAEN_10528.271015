@@ -1,0 +1,40 @@
+[2015/10/27 15:05:05] 
+
+NUEVA CONSULTA CON id 379577, USUARIO 2, TIPO 2
+
+[2015/10/27 15:05:05] Usuario válido
+[2015/10/27 15:05:05] Borra la audiencia de la tabla si existe
+******* Run time exception information begins ****
+When:  Tue Oct 27 15:05:05 2015
+Where: Error code -942 reported by function Compile of ora7_wfo called by vprepare 
+What:  ORA-00942: table or view does not exist
+
+Why:   ??
+Subsystem code:10004,Error code:-942
+SQL: SELECT reboses FROM PROPCONSULTA_EXT WHERE Id_consulta = [#1,<Not Bound>]
+******* Run time exception information ends  *****
+[2015/10/27 15:05:08] Número  de programas : 612
+[2015/10/27 15:05:08] Número de targets: 1
+[2015/10/27 15:05:08] Comienza la ejecución del motor ...
+[2015/10/27 15:05:08] Día 2457126, lee target del día...
+[2015/10/27 15:05:08] 	...y termina
+[2015/10/27 15:05:08] se sacan los tíos del target....
+[2015/10/27 15:05:08] 	...y se termina
+[2015/10/27 15:05:08] Emisiones2Audiencia...
+[2015/10/27 15:05:08] ...termina Emisiones2Audiencia
+[2015/10/27 15:05:08] Calculando audiencia. Entra en el motor.
+
+[2015/10/27 15:05:08] 	Proceso ...
+[2015/10/27 15:05:08] 	Entro en target 0  con 703 seleccionados
+[2015/10/27 15:05:08] se piden 10552320 bytes (n_canales_totales = 229)
+[2015/10/27 15:05:08] Entra en funcion de ordenacion
+[2015/10/27 15:05:08] Sale de funcion de ordenacion
+[2015/10/27 15:05:08]  Entra en bucle por individuo
+[2015/10/27 15:05:08] Sale de bucle por individuo
+[2015/10/27 15:05:08] Calcula el TTV
+[2015/10/27 15:05:08] Termina con el TTV
+[2015/10/27 15:05:08] Libera estructuras
+[2015/10/27 15:05:08] Leidos 9 programas. Empieza a asignar audiencias
+[2015/10/27 15:05:08] inserción de 18 filas...
+[2015/10/27 15:05:08] Final del proceso para un dia
+

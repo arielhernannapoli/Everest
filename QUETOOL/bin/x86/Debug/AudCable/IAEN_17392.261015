@@ -1,0 +1,147 @@
+[2015/10/26 17:39:53] 
+
+NUEVA CONSULTA CON id 379530, USUARIO 2, TIPO 2
+
+[2015/10/26 17:39:53] Usuario válido
+[2015/10/26 17:39:53] Borra la audiencia de la tabla si existe
+******* Run time exception information begins ****
+When:  Mon Oct 26 17:39:53 2015
+Where: Error code -942 reported by function Compile of ora7_wfo called by vprepare 
+What:  ORA-00942: table or view does not exist
+
+Why:   ??
+Subsystem code:10004,Error code:-942
+SQL: SELECT reboses FROM PROPCONSULTA_EXT WHERE Id_consulta = [#1,<Not Bound>]
+******* Run time exception information ends  *****
+[2015/10/26 17:39:53] Número  de programas : 0
+******* Run time exception information begins ****
+When:  Mon Oct 26 17:39:53 2015
+Where: Análisis_de_emisiones
+What:  No se han cargado emisiones
+Why:   No hay emisiones con este identificador de consulta
+Subsystem code:0,Error code:1
+******* Run time exception information ends  *****
+******* Run time exception information begins ****
+When:  Mon Oct 26 17:39:54 2015
+Where: Análisis_de_emisiones (Thread)
+What:  No se han cargado emisiones
+Why:   No hay emisiones con este identificador de consulta
+Subsystem code:0,Error code:1
+******* Run time exception information ends  *****
+[2015/10/26 17:39:54] Se ha producido el error: 
+No se han cargado emisiones
+En:Análisis_de_emisiones (Thread)
+Causa:No hay emisiones con este identificador de consulta
+La operación no se ha completado.
+[2015/10/26 17:40:11] 
+
+NUEVA CONSULTA CON id 379531, USUARIO 2, TIPO 2
+
+[2015/10/26 17:40:11] Usuario válido
+[2015/10/26 17:40:11] Borra la audiencia de la tabla si existe
+******* Run time exception information begins ****
+When:  Mon Oct 26 17:40:11 2015
+Where: Error code -942 reported by function Compile of ora7_wfo called by vprepare 
+What:  ORA-00942: table or view does not exist
+
+Why:   ??
+Subsystem code:10004,Error code:-942
+SQL: SELECT reboses FROM PROPCONSULTA_EXT WHERE Id_consulta = [#1,<Not Bound>]
+******* Run time exception information ends  *****
+[2015/10/26 17:40:12] Número  de programas : 0
+******* Run time exception information begins ****
+When:  Mon Oct 26 17:40:12 2015
+Where: Análisis_de_emisiones
+What:  No se han cargado emisiones
+Why:   No hay emisiones con este identificador de consulta
+Subsystem code:0,Error code:1
+******* Run time exception information ends  *****
+******* Run time exception information begins ****
+When:  Mon Oct 26 17:40:12 2015
+Where: Análisis_de_emisiones (Thread)
+What:  No se han cargado emisiones
+Why:   No hay emisiones con este identificador de consulta
+Subsystem code:0,Error code:1
+******* Run time exception information ends  *****
+[2015/10/26 17:40:12] Se ha producido el error: 
+No se han cargado emisiones
+En:Análisis_de_emisiones (Thread)
+Causa:No hay emisiones con este identificador de consulta
+La operación no se ha completado.
+[2015/10/26 17:41:15] 
+
+NUEVA CONSULTA CON id 379532, USUARIO 2, TIPO 2
+
+[2015/10/26 17:41:15] Usuario válido
+[2015/10/26 17:41:15] Borra la audiencia de la tabla si existe
+******* Run time exception information begins ****
+When:  Mon Oct 26 17:41:15 2015
+Where: Error code -942 reported by function Compile of ora7_wfo called by vprepare 
+What:  ORA-00942: table or view does not exist
+
+Why:   ??
+Subsystem code:10004,Error code:-942
+SQL: SELECT reboses FROM PROPCONSULTA_EXT WHERE Id_consulta = [#1,<Not Bound>]
+******* Run time exception information ends  *****
+[2015/10/26 17:41:16] Número  de programas : 17
+[2015/10/26 17:41:16] Número de targets: 1
+******* Run time exception information begins ****
+When:  Mon Oct 26 17:41:16 2015
+Where: Analisis de audiencias
+What:  No se ha encontrado fichero de trabajo para alguno de los periodos
+Why:   periodos en Nautilus.ini no coinciden con periodos en consulta
+Subsystem code:0,Error code:3
+******* Run time exception information ends  *****
+******* Run time exception information begins ****
+When:  Mon Oct 26 17:41:16 2015
+Where: Analisis de audiencias (Thread)
+What:  No se ha encontrado fichero de trabajo para alguno de los periodos
+Why:   periodos en Nautilus.ini no coinciden con periodos en consulta
+Subsystem code:0,Error code:3
+******* Run time exception information ends  *****
+[2015/10/26 17:41:16] Se ha producido el error: 
+No se ha encontrado fichero de trabajo para alguno de los periodos
+En:Analisis de audiencias (Thread)
+Causa:periodos en Nautilus.ini no coinciden con periodos en consulta
+La operación no se ha completado.
+[2015/10/26 17:47:12] 
+
+NUEVA CONSULTA CON id 379533, USUARIO 2, TIPO 2
+
+[2015/10/26 17:47:12] Usuario válido
+[2015/10/26 17:47:12] Borra la audiencia de la tabla si existe
+******* Run time exception information begins ****
+When:  Mon Oct 26 17:47:12 2015
+Where: Error code -942 reported by function Compile of ora7_wfo called by vprepare 
+What:  ORA-00942: table or view does not exist
+
+Why:   ??
+Subsystem code:10004,Error code:-942
+SQL: SELECT reboses FROM PROPCONSULTA_EXT WHERE Id_consulta = [#1,<Not Bound>]
+******* Run time exception information ends  *****
+[2015/10/26 17:47:13] Número  de programas : 1
+[2015/10/26 17:47:13] Número de targets: 1
+[2015/10/26 17:47:13] Comienza la ejecución del motor ...
+[2015/10/26 17:47:13] Día 2457208, lee target del día...
+[2015/10/26 17:47:13] 	...y termina
+[2015/10/26 17:47:13] se sacan los tíos del target....
+[2015/10/26 17:47:13] 	...y se termina
+[2015/10/26 17:47:13] Emisiones2Audiencia...
+[2015/10/26 17:47:13] ...termina Emisiones2Audiencia
+[2015/10/26 17:47:13] Calculando audiencia. Entra en el motor.
+
+[2015/10/26 17:47:13] 	Proceso ...
+[2015/10/26 17:47:13] 	Entro en target 0  con 438 seleccionados
+[2015/10/26 17:47:13] se piden 10506240 bytes (n_canales_totales = 228)
+[2015/10/26 17:47:13] Entra en funcion de ordenacion
+[2015/10/26 17:47:13] Sale de funcion de ordenacion
+[2015/10/26 17:47:13]  Entra en bucle por individuo
+[2015/10/26 17:47:13] Sale de bucle por individuo
+[2015/10/26 17:47:13] Calcula el TTV
+[2015/10/26 17:47:13] Termina con el TTV
+[2015/10/26 17:47:13] Libera estructuras
+[2015/10/26 17:47:13] Leidos 1 programas. Empieza a asignar audiencias
+[2015/10/26 17:47:13] inserción de 2 filas...
+[2015/10/26 17:47:13] Final del proceso para un dia
+
+[2015/10/26 17:47:13] Sale del análisis

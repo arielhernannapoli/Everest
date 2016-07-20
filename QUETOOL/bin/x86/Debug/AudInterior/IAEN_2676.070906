@@ -1,0 +1,26 @@
+[2006/09/07 17:57:05] 
+
+NUEVA CONSULTA CON id 104652, USUARIO 2, TIPO 2
+
+[2006/09/07 17:57:05] Usuario válido
+[2006/09/07 17:57:05] Borra la audiencia de la tabla si existe
+[2006/09/07 17:57:05] Número  de programas : 0
+******* Run time exception information begins ****
+When:  Thu Sep 07 17:57:05 2006
+Where: Análisis_de_emisiones
+What:  No se han cargado emisiones
+Why:   No hay emisiones con este identificador de consulta
+Subsystem code:0,Error code:1
+******* Run time exception information ends  *****
+******* Run time exception information begins ****
+When:  Thu Sep 07 17:57:06 2006
+Where: Análisis_de_emisiones (Thread)
+What:  No se han cargado emisiones
+Why:   No hay emisiones con este identificador de consulta
+Subsystem code:0,Error code:1
+******* Run time exception information ends  *****
+[2006/09/07 17:57:06] Se ha producido el error: 
+No se han cargado emisiones
+En:Análisis_de_emisiones (Thread)
+Causa:No hay emisiones con este identificador de consulta
+La operación no se ha completado.

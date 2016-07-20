@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.havas.com/MMS/C/O/TV" elementFormDefault="qualified" targetNamespace="http://www.havas.com/MMS/C/O/TV" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://www.havas.com/C/SEF" />
+  <xs:import namespace="http://www.havas.com/C/SEF/BC" />
+  <xs:complexType name="O">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://www.havas.com/C/SEF/BC" base="q1:BSE">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="A" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="AFC" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="APFC" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="B" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CA" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="CAL" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CAM" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CAO" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="CBPC" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CBPV" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CC" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CCA" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CCL" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CCM" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CD" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CDE" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CF" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CFC" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="CFP" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CFUC" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CFUV" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CFV" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="CI" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CLD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CM" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CMD" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CME" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CMO" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CNC" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CNCD" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CNCDD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CNPC" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CNPCD" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CNPV" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CNPVD" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CNV" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CNVD" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CNVDD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CO" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="COI" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="COR" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CP" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CPG" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CPL" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CPLA" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CPO" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CPR" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CPRE" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CPREA" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CPT" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CPV" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CS" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CSO" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CTA" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CTC" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CTE" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CTI" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CTO" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CTP" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CTT" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CTV" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CU" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CUM" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CUMD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="D" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="DAC" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="DAV" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="DC" type="xs:boolean" />
+          <xs:element minOccurs="0" name="DE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DES" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DMD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DNC" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="DNV" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="DPS" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DPT" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DSAGC" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="DSAGV" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="E" type="xs:int" />
+          <xs:element minOccurs="0" name="EA" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ECI" type="xs:boolean" />
+          <xs:element minOccurs="0" name="EO" type="xs:boolean" />
+          <xs:element minOccurs="0" name="EP" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ESO" type="xs:int" />
+          <xs:element minOccurs="0" name="ET" type="xs:boolean" />
+          <xs:element minOccurs="0" name="FB" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FC" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FCL" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="FE" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FRE" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="GC" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="GP" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="GPR" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="GR" nillable="true" type="xs:decimal" />
+          <xs:element xmlns:q2="http://www.havas.com/C/SEF" minOccurs="0" name="GRPS" nillable="true" type="q2:ArrayOfSE" />
+          <xs:element minOccurs="0" name="GV" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="H" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="HP" nillable="true" type="tns:HP" />
+          <xs:element minOccurs="0" name="I" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="I1" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="I1D" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="IB" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="IC" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ICD" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ICI" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ICID" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ICN" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ICND" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="IE" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="IES" nillable="true" type="xs:int" />
+          <xs:element xmlns:q3="http://www.havas.com/C/SEF" minOccurs="0" name="IM" nillable="true" type="q3:ArrayOfSE" />
+          <xs:element minOccurs="0" name="IR" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="IT" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ITC" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ITCD" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ITD" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ITO" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ITOD" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ITV" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ITVD" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="IV" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="IVD" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="IVDG" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="IVDGD" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="IVI" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="IVID" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="IVN" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="IVND" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="MD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MED" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NC" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NCT" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="NCV" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="NF" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NFPV" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NI" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NOI" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="NOIC" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="NOIF" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="NOIP" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="NP" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="NUOI" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NVT" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="NVV" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="P" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="PCC" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="PCD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PCI" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="PCPS" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="PCS" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="PD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PDD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PFC" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="PFEO" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="PFF" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="PFI" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="PFSA" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="PS" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="PSCC" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="PSCCC" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="PSCCCC" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="PSCCCD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PSCCD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PSCCPD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PSCD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PSCPC" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="PSCPD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PSD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PSDM" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PTAD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PTADDVA" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PTADVA" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="PTC" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PTCM" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PTMC" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PTTAD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PVC" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="R" type="xs:boolean" />
+          <xs:element minOccurs="0" name="RA" type="xs:boolean" />
+          <xs:element minOccurs="0" name="RF" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RO" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="RSA" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="SD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TA" nillable="true" type="xs:string" />
+          <xs:element xmlns:q4="http://www.havas.com/C/SEF" minOccurs="0" name="TI" nillable="true" type="q4:ArrayOfSE" />
+          <xs:element minOccurs="0" name="V" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="VD" nillable="true" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="O" nillable="true" type="tns:O" />
+  <xs:complexType name="HP">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://www.havas.com/C/SEF/BC" base="q5:BSE">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="H" type="xs:int" />
+          <xs:element minOccurs="0" name="M" type="xs:int" />
+          <xs:element minOccurs="0" name="S" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="HP" nillable="true" type="tns:HP" />
+  <xs:complexType name="ArrayOfDR">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DR" nillable="true" type="tns:DR" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDR" nillable="true" type="tns:ArrayOfDR" />
+  <xs:complexType name="DR">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://www.havas.com/C/SEF/BC" base="q6:BSE">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="A" type="xs:int" />
+          <xs:element minOccurs="0" name="CDR" type="xs:int" />
+          <xs:element minOccurs="0" name="CDT" type="xs:int" />
+          <xs:element minOccurs="0" name="CT" type="xs:int" />
+          <xs:element minOccurs="0" name="D" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="I" type="xs:int" />
+          <xs:element minOccurs="0" name="P" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DR" nillable="true" type="tns:DR" />
+</xs:schema>

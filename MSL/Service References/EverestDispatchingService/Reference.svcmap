@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a29e6850-de10-481b-a0cc-5bcaa53b0d01" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://hvmmadmlp01:8060/MMS/EverestDispatchingService.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="1151b2c7-d369-40a5-8da3-ec7993b31392" SourceId="1" SourceUrl="http://hvmmadmlp01:8060/MMS/EverestDispatchingService.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="41cf68b2-e6b1-4eae-a736-afbe4d93b3c6" SourceId="1" SourceUrl="http://hvmmadmlp01:8060/MMS/EverestDispatchingService.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="36cc6d00-798e-47a5-a99d-b4623ec7fec4" SourceId="1" SourceUrl="http://hvmmadmlp01:8060/MMS/EverestDispatchingService.svc/mex" />
+    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="7e5aea71-3a9f-4f3b-b464-2d8d594f3949" SourceId="1" SourceUrl="http://hvmmadmlp01:8060/MMS/EverestDispatchingService.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

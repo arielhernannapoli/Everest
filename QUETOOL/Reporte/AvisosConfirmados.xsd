@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="AvisosConfirmados" targetNamespace="http://tempuri.org/AvisosConfirmados.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/AvisosConfirmados.xsd"
+	xmlns:mstns="http://tempuri.org/AvisosConfirmados.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="AvisosConfirmados" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Avisos">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Campania" type="xs:string" minOccurs="0" />
+							<xs:element name="Sistema" type="xs:string" minOccurs="0" />
+							<xs:element name="Ejercicio" type="xs:string" minOccurs="0" />
+							<xs:element name="Cadena" type="xs:string" minOccurs="0" />
+							<xs:element name="Hora" type="xs:string" minOccurs="0" />
+							<xs:element name="Programa" type="xs:string" minOccurs="0" />
+							<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="GRP" type="xs:double" minOccurs="0" />
+							<xs:element name="Neto" type="xs:double" minOccurs="0" />
+							<xs:element name="ProgramaReal" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaReal" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HoraReal" type="xs:string" minOccurs="0" />
+							<xs:element name="GRPReal" type="xs:double" minOccurs="0" />
+							<xs:element name="NetoReal" type="xs:double" minOccurs="0" />
+							<xs:element name="Posicion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

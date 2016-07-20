@@ -1,0 +1,111 @@
+[2015/07/30 14:55:22] 
+
+NUEVA CONSULTA CON id 378169, USUARIO 2, TIPO 2
+
+[2015/07/30 14:55:22] Usuario válido
+[2015/07/30 14:55:22] Borra la audiencia de la tabla si existe
+******* Run time exception information begins ****
+When:  Thu Jul 30 14:55:22 2015
+Where: Error code -942 reported by function Compile of ora7_wfo called by vprepare 
+What:  ORA-00942: table or view does not exist
+
+Why:   ??
+Subsystem code:10004,Error code:-942
+SQL: SELECT reboses FROM PROPCONSULTA_EXT WHERE Id_consulta = [#1,<Not Bound>]
+******* Run time exception information ends  *****
+[2015/07/30 14:55:22] Número  de programas : 0
+******* Run time exception information begins ****
+When:  Thu Jul 30 14:55:22 2015
+Where: Análisis_de_emisiones
+What:  No se han cargado emisiones
+Why:   No hay emisiones con este identificador de consulta
+Subsystem code:0,Error code:1
+******* Run time exception information ends  *****
+******* Run time exception information begins ****
+When:  Thu Jul 30 14:55:23 2015
+Where: Análisis_de_emisiones (Thread)
+What:  No se han cargado emisiones
+Why:   No hay emisiones con este identificador de consulta
+Subsystem code:0,Error code:1
+******* Run time exception information ends  *****
+[2015/07/30 14:55:23] Se ha producido el error: 
+No se han cargado emisiones
+En:Análisis_de_emisiones (Thread)
+Causa:No hay emisiones con este identificador de consulta
+La operación no se ha completado.
+[2015/07/30 14:55:37] 
+
+NUEVA CONSULTA CON id 378170, USUARIO 2, TIPO 2
+
+[2015/07/30 14:55:37] Usuario válido
+[2015/07/30 14:55:37] Borra la audiencia de la tabla si existe
+******* Run time exception information begins ****
+When:  Thu Jul 30 14:55:37 2015
+Where: Error code -942 reported by function Compile of ora7_wfo called by vprepare 
+What:  ORA-00942: table or view does not exist
+
+Why:   ??
+Subsystem code:10004,Error code:-942
+SQL: SELECT reboses FROM PROPCONSULTA_EXT WHERE Id_consulta = [#1,<Not Bound>]
+******* Run time exception information ends  *****
+[2015/07/30 14:55:37] Número  de programas : 0
+******* Run time exception information begins ****
+When:  Thu Jul 30 14:55:37 2015
+Where: Análisis_de_emisiones
+What:  No se han cargado emisiones
+Why:   No hay emisiones con este identificador de consulta
+Subsystem code:0,Error code:1
+******* Run time exception information ends  *****
+******* Run time exception information begins ****
+When:  Thu Jul 30 14:55:38 2015
+Where: Análisis_de_emisiones (Thread)
+What:  No se han cargado emisiones
+Why:   No hay emisiones con este identificador de consulta
+Subsystem code:0,Error code:1
+******* Run time exception information ends  *****
+[2015/07/30 14:55:38] Se ha producido el error: 
+No se han cargado emisiones
+En:Análisis_de_emisiones (Thread)
+Causa:No hay emisiones con este identificador de consulta
+La operación no se ha completado.
+[2015/07/30 14:55:59] 
+
+NUEVA CONSULTA CON id 378171, USUARIO 2, TIPO 2
+
+[2015/07/30 14:55:59] Usuario válido
+[2015/07/30 14:55:59] Borra la audiencia de la tabla si existe
+******* Run time exception information begins ****
+When:  Thu Jul 30 14:55:59 2015
+Where: Error code -942 reported by function Compile of ora7_wfo called by vprepare 
+What:  ORA-00942: table or view does not exist
+
+Why:   ??
+Subsystem code:10004,Error code:-942
+SQL: SELECT reboses FROM PROPCONSULTA_EXT WHERE Id_consulta = [#1,<Not Bound>]
+******* Run time exception information ends  *****
+[2015/07/30 14:55:59] Número  de programas : 1
+[2015/07/30 14:55:59] Número de targets: 1
+[2015/07/30 14:55:59] Comienza la ejecución del motor ...
+[2015/07/30 14:55:59] Día 2457134, lee target del día...
+[2015/07/30 14:55:59] 	...y termina
+[2015/07/30 14:55:59] se sacan los tíos del target....
+[2015/07/30 14:55:59] 	...y se termina
+[2015/07/30 14:55:59] Emisiones2Audiencia...
+[2015/07/30 14:55:59] ...termina Emisiones2Audiencia
+[2015/07/30 14:55:59] Calculando audiencia. Entra en el motor.
+
+[2015/07/30 14:55:59] 	Proceso ...
+[2015/07/30 14:55:59] 	Entro en target 0  con 711 seleccionados
+[2015/07/30 14:55:59] se piden 9953280 bytes (n_canales_totales = 216)
+[2015/07/30 14:55:59] Entra en funcion de ordenacion
+[2015/07/30 14:55:59] Sale de funcion de ordenacion
+[2015/07/30 14:55:59]  Entra en bucle por individuo
+[2015/07/30 14:55:59] Sale de bucle por individuo
+[2015/07/30 14:55:59] Calcula el TTV
+[2015/07/30 14:55:59] Termina con el TTV
+[2015/07/30 14:55:59] Libera estructuras
+[2015/07/30 14:55:59] Leidos 1 programas. Empieza a asignar audiencias
+[2015/07/30 14:55:59] inserción de 2 filas...
+[2015/07/30 14:55:59] Final del proceso para un dia
+
+[2015/07/30 14:56:00] Sale del análisis

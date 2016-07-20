@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://www.havas.com/MMS/C/S" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes.Television" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="InsertarOrdenes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://www.havas.com/MMS/C/S" minOccurs="0" name="usuario" nillable="true" type="q1:U" />
+        <xs:element minOccurs="0" name="codigoCampana" type="xs:int" />
+        <xs:element minOccurs="0" name="codigoSubcampana" type="xs:int" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes.Television" minOccurs="0" name="ordenes" nillable="true" type="q2:ArrayOfOrdenTelevision" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertarOrdenesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" minOccurs="0" name="InsertarOrdenesResult" nillable="true" type="q3:ResultadoWSOfArrayOfKeyValueOfOrdenEverestNullableOfintm1Ct94vbuHEDJ7Dj" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerOrden">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://www.havas.com/MMS/C/S" minOccurs="0" name="usuario" nillable="true" type="q4:U" />
+        <xs:element minOccurs="0" name="codigoCompania" type="xs:int" />
+        <xs:element minOccurs="0" name="codigoOrden" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerOrdenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" minOccurs="0" name="ObtenerOrdenResult" nillable="true" type="q5:ResultadoWSOfOrdenTelevisionqHNdsGt_S" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarOrdenCompleta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://www.havas.com/MMS/C/S" minOccurs="0" name="usuario" nillable="true" type="q6:U" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes.Television" minOccurs="0" name="orden" nillable="true" type="q7:OrdenTelevision" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarOrdenCompletaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" minOccurs="0" name="ActualizarOrdenCompletaResult" nillable="true" type="q8:ResultadoWSOfOrdenTelevisionqHNdsGt_S" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarOrden">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://www.havas.com/MMS/C/S" minOccurs="0" name="usuario" nillable="true" type="q9:U" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes.Television" minOccurs="0" name="orden" nillable="true" type="q10:OrdenTelevision" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarOrdenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" minOccurs="0" name="ActualizarOrdenResult" nillable="true" type="q11:ResultadoWS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarOrdenes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://www.havas.com/MMS/C/S" minOccurs="0" name="usuario" nillable="true" type="q12:U" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes.Television" minOccurs="0" name="ordenes" nillable="true" type="q13:ArrayOfOrdenTelevision" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarOrdenesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" minOccurs="0" name="ActualizarOrdenesResult" nillable="true" type="q14:ResultadoWS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerOrdenesPorPresupuesto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://www.havas.com/MMS/C/S" minOccurs="0" name="usuario" nillable="true" type="q15:U" />
+        <xs:element minOccurs="0" name="codigoCompania" type="xs:int" />
+        <xs:element minOccurs="0" name="codigoPresupuesto" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerOrdenesPorPresupuestoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" minOccurs="0" name="ObtenerOrdenesPorPresupuestoResult" nillable="true" type="q16:ResultadoWSOfArrayOfOrdenTelevisionqHNdsGt_S" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertarOrdenCompleta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://www.havas.com/MMS/C/S" minOccurs="0" name="usuario" nillable="true" type="q17:U" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes.Television" minOccurs="0" name="orden" nillable="true" type="q18:OrdenTelevision" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertarOrdenCompletaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" minOccurs="0" name="InsertarOrdenCompletaResult" nillable="true" type="q19:ResultadoWSOfOrdenTelevisionqHNdsGt_S" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertarOrdenEverestCompleta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://www.havas.com/MMS/C/S" minOccurs="0" name="usuario" nillable="true" type="q20:U" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes.Television" minOccurs="0" name="orden" nillable="true" type="q21:OrdenTelevision" />
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes" minOccurs="0" name="ordenEverest" nillable="true" type="q22:OrdenEverest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertarOrdenEverestCompletaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" minOccurs="0" name="InsertarOrdenEverestCompletaResult" nillable="true" type="q23:ResultadoWSOfOrdenTelevisionqHNdsGt_S" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertarOrdenesCompletas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://www.havas.com/MMS/C/S" minOccurs="0" name="usuario" nillable="true" type="q24:U" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes.Television" minOccurs="0" name="listaOrdenes" nillable="true" type="q25:ArrayOfOrdenTelevision" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertarOrdenesCompletasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" minOccurs="0" name="InsertarOrdenesCompletasResult" nillable="true" type="q26:ResultadoWSOfArrayOfOrdenTelevisionqHNdsGt_S" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarOrdenesCompletas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://www.havas.com/MMS/C/S" minOccurs="0" name="usuario" nillable="true" type="q27:U" />
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes.Television" minOccurs="0" name="listaOrdenes" nillable="true" type="q28:ArrayOfOrdenTelevision" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarOrdenesCompletasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" minOccurs="0" name="ActualizarOrdenesCompletasResult" nillable="true" type="q29:ResultadoWSOfArrayOfOrdenTelevisionqHNdsGt_S" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnularOrdenes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://www.havas.com/MMS/C/S" minOccurs="0" name="usuario" nillable="true" type="q30:U" />
+        <xs:element minOccurs="0" name="codigoCompania" type="xs:int" />
+        <xs:element xmlns:q31="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="codigosOrden" nillable="true" type="q31:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnularOrdenesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" minOccurs="0" name="AnularOrdenesResult" nillable="true" type="q32:ResultadoWSOfArrayOfintuHEDJ7Dj" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarEstados">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://www.havas.com/MMS/C/S" minOccurs="0" name="usuario" nillable="true" type="q33:U" />
+        <xs:element xmlns:q34="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="codigosOrden" nillable="true" type="q34:ArrayOfint" />
+        <xs:element minOccurs="0" name="codEstado" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarEstadosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" minOccurs="0" name="ActualizarEstadosResult" nillable="true" type="q35:ResultadoWS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearOrdenesPorRefacturacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://www.havas.com/MMS/C/S" minOccurs="0" name="usuario" nillable="true" type="q36:U" />
+        <xs:element minOccurs="0" name="codPresupuesto" type="xs:int" />
+        <xs:element minOccurs="0" name="dImporte" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearOrdenesPorRefacturacionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" minOccurs="0" name="CrearOrdenesPorRefacturacionResult" nillable="true" type="q37:ResultadoWS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnularOrden">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://www.havas.com/MMS/C/S" minOccurs="0" name="usuario" nillable="true" type="q38:U" />
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.BusinessEntity.Ordenes.Television" minOccurs="0" name="orden" nillable="true" type="q39:OrdenTelevision" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnularOrdenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" minOccurs="0" name="AnularOrdenResult" nillable="true" type="q40:ResultadoWS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerDescuentos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://www.havas.com/MMS/C/S" minOccurs="0" name="usuario" nillable="true" type="q41:U" />
+        <xs:element minOccurs="0" name="codPais" type="xs:int" />
+        <xs:element minOccurs="0" name="codOrden" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerDescuentosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/HM.MMS.AR.Server.Service" minOccurs="0" name="ObtenerDescuentosResult" nillable="true" type="q42:ResultadoWSOfArrayOfDRfiFXlTOR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
